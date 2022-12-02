@@ -1,6 +1,6 @@
 const express = require("express"); // import express from "express" e karşılık geliyor.
 const fs = require("fs");   // node.js kurulduğunda dahili olarak gelir, (file system)
-const cors = require("cors");
+const cors = require("cors"); // express 4000 de çalışırken react tarafı 3000 de çalışıyor, ikisi arasındaki senkronizasyon için "cors"
 /**
  *
  * @param {string} text
