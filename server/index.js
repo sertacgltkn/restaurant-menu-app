@@ -39,7 +39,7 @@ const app = express();
 
 app.use(cors());
 
-app.use(express.static("assets"));
+app.use(express.static("assets")); // get API products
 
 app.get("/", (req, res, next) => {
 	res.send("react bootcamp restaurant menu system apiii");
