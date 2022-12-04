@@ -26,6 +26,10 @@ export default function ProductList({ products = [] }) {
     setItems(state);
   };
 
+  const addToBasket = item => {
+    console.log("product", item)
+  }
+
   const renderCard = (item) => {
     return (
       <div className="col-3" key={item.id}>
@@ -34,7 +38,7 @@ export default function ProductList({ products = [] }) {
           <div className="card-body">
             <h5 className="card-title">{item.name}</h5>
             <div className="custom-card-footer">
-              <Button className="btn btn-primary">
+              <Button onClick={() => addToBasket(item)} className="btn btn-primary">
                 Sepete Ekle
               </Button>
               <span>{formatPrice(item.price)}</span>{" "}

@@ -48,6 +48,54 @@
     "image_url": "http://localhost:4000/images/green-apple.png"
   },
   {
+    "category_id": 1,
+    "category": "Soğuk İçecekler",
+    "id": 8,
+    "name": "Karadut Şerbeti",
+    "price": 15.9,
+    "image_url": "http://localhost:4000/images/karadut-şerbeti.jpg"
+  },
+  {
+    "category_id": 1,
+    "category": "Soğuk İçecekler",
+    "id": 9,
+    "name": "Milkshake",
+    "price": 21.9,
+    "image_url": "http://localhost:4000/images/milkshake.jpg"
+  },
+  {
+    "category_id": 1,
+    "category": "Soğuk İçecekler",
+    "id": 10,
+    "name": "Limonata",
+    "price": 12.9,
+    "image_url": "http://localhost:4000/images/limonata.jpg"
+  },
+  {
+    "category_id": 1,
+    "category": "Soğuk İçecekler",
+    "id": 11,
+    "name": "Soğuk Çay",
+    "price": 15.9,
+    "image_url": "http://localhost:4000/images/soğuk-çay.jpeg"
+  },
+  {
+    "category_id": 1,
+    "category": "Soğuk İçecekler",
+    "id": 12,
+    "name": "Buzlu Kahve",
+    "price": 19.9,
+    "image_url": "http://localhost:4000/images/buzlu-kahve.jpg"
+  },
+  {
+    "category_id": 1,
+    "category": "Soğuk İçecekler",
+    "id": 13,
+    "name": "Sangria",
+    "price": 19.9,
+    "image_url": "http://localhost:4000/images/Sangria.jpg"
+  },
+  {
     "category_id": 8,
     "category": "Waffle",
     "id": 9,
@@ -150,5 +198,77 @@
     "name": "Damla Sakızlı Kahve",
     "price": 13.59,
     "image_url": "http://localhost:4000/images/turk-kahvesi.jpeg"
+  },
+  {
+    "category_id": 20,
+    "category": "Kahveler",
+    "id": 24,
+    "name": "Espresso",
+    "price": 20.00,
+    "image_url": "http://localhost:4000/images/Espresso.jpg"
+  },
+  {
+    "category_id": 20,
+    "category": "Kahveler",
+    "id": 25,
+    "name": "Americano",
+    "price": 13.59,
+    "image_url": "http://localhost:4000/images/Americano.jpg"
+  },
+  {
+    "category_id": 20,
+    "category": "Kahveler",
+    "id": 26,
+    "name": "Cappuccino",
+    "price": 13.59,
+    "image_url": "http://localhost:4000/images/Cappuccino.jpg"
+  },
+  {
+    "category_id": 20,
+    "category": "Kahveler",
+    "id": 27,
+    "name": "Frappe",
+    "price": 13.59,
+    "image_url": "http://localhost:4000/images/Frappe.jpg"
+  },
+  {
+    "category_id": 20,
+    "category": "Kahveler",
+    "id": 28,
+    "name": "Latte",
+    "price": 13.59,
+    "image_url": "http://localhost:4000/images/Latte.jpg"
+  },
+  {
+    "category_id": 20,
+    "category": "Kahveler",
+    "id": 29,
+    "name": "Macchiato",
+    "price": 13.59,
+    "image_url": "http://localhost:4000/images/Macchiato.jpg"
+  },
+  {
+    "category_id": 20,
+    "category": "Kahveler",
+    "id": 30,
+    "name": "Mocha",
+    "price": 13.59,
+    "image_url": "http://localhost:4000/images/Mocha.jpg"
+  },
+  {
+    "category_id": 20,
+    "category": "Kahveler",
+    "id": 31,
+    "name": "Marocchino",
+    "price": 13.59,
+    "image_url": "http://localhost:4000/images/Marocchino.jpg"
+  },
+  {
+    "category_id": 20,
+    "category": "Kahveler",
+    "id": 32,
+    "name": "Filtre Kahve",
+    "price": 13.59,
+    "image_url": "http://localhost:4000/images/Filtre-Kahve.jpg"
   }
 ]
