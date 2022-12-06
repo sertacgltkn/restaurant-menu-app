@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useShoppingCart } from "../../context/cart-context";
 import { formatPrice } from "../../utils";
 import Button from "../button";
 import "./style.css";
 
 export default function ProductList({ products = [] }) {
+  const { state } = useShoppingCart();
+  console.log("state", state);
   const [items, setItems] = useState([]);
   useEffect(() => {
     handleProducts();
@@ -26,9 +29,9 @@ export default function ProductList({ products = [] }) {
     setItems(state);
   };
 
-  const addToBasket = item => {
-    console.log("product", item)
-  }
+  const addToBasket = (item) => {
+    console.log("product", item);
+  };
 
   const renderCard = (item) => {
     return (
@@ -38,15 +41,13 @@ export default function ProductList({ products = [] }) {
           <div className="card-body">
             <h5 className="card-title">{item.name}</h5>
             <div className="custom-card-footer">
-              <Button onClick={() => addToBasket(item)} className="btn btn-primary">
+              <Button
+                onClick={() => addToBasket(item)}
+                className="btn btn-primary"
+              >
                 Sepete Ekle
               </Button>
               <span>{formatPrice(item.price)}</span>{" "}
-              {/* toFixed(2) js methodu : fiyatın .'dan sonraki küsüratını 2 haneli yapar. */}
-              
-                 {/* formatPrice bizim yazdığımız bir method ve utils klasörü içinde */} 
-             
-              {/* TL işareti için alt gr+ T = ₺ */}
             </div>
           </div>
         </div>
@@ -62,7 +63,7 @@ export default function ProductList({ products = [] }) {
             <div className="col-10">
               <div className="category-title">{item.name}</div>
             </div>
-            <div className="col-2"> 
+            <div className="col-2">
               <div>Tümünü Gör</div>
             </div>
             <div className="row product-row">
