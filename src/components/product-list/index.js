@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { useShoppingCart } from "../../context/cart-context";
 import { formatPrice } from "../../utils";
-import Button from "../button";
 import "./style.css";
+import Button from "../button";
+import { useShoppingCart } from "../../context/cart-context";
 
 export default function ProductList({ products = [] }) {
-  const { state } = useShoppingCart();
-  console.log("state", state);
+  const cart = useShoppingCart();
   const [items, setItems] = useState([]);
+  console.log("cart", cart.state);
   useEffect(() => {
     handleProducts();
   }, [products]);
 
-  const handleProducts = () => {
+  const handleProducts = () => {       // ürünleri kategorilere göre gruplamak için
     const state = [];
     products.forEach((product) => {
       const index = state.findIndex((x) => x.id === product.category_id);
@@ -30,24 +30,48 @@ export default function ProductList({ products = [] }) {
   };
 
   const addToBasket = (item) => {
-    console.log("product", item);
+    cart.addToCart(item);
   };
 
   const renderCard = (item) => {
     return (
       <div className="col-3" key={item.id}>
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card">
           <img src={item.image_url} className="card-img-top" alt={item.name} />
           <div className="card-body">
             <h5 className="card-title">{item.name}</h5>
             <div className="custom-card-footer">
-              <Button
-                onClick={() => addToBasket(item)}
-                className="btn btn-primary"
-              >
-                Sepete Ekle
-              </Button>
-              <span>{formatPrice(item.price)}</span>{" "}
+              {cart.hasShoppingCart(item) ? (
+                <div
+                  className="btn-group"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button
+                    onClick={() => cart.updateFromCart(item, "minus")}
+                    className="btn btn-danger"
+                  >
+                    -
+                  </button>
+                  <button type="button" className="btn btn-danger">
+                    {cart.state[item.id].quantity}
+                  </button>
+                  <button
+                    onClick={() => cart.updateFromCart(item, "plus")}
+                    className="btn btn-danger"
+                  >
+                    +
+                  </button>
+                </div>
+              ) : (
+                <Button
+                  onClick={() => addToBasket(item)}
+                  className="btn btn-primary"
+                >
+                  Sepete Ekle
+                </Button>
+              )}
+              <span>{formatPrice(item.price)}</span>
             </div>
           </div>
         </div>
@@ -63,8 +87,9 @@ export default function ProductList({ products = [] }) {
             <div className="col-10">
               <div className="category-title">{item.name}</div>
             </div>
-            <div className="col-2">
+            <div className="col-2 seeAll">
               <div>Tümünü Gör</div>
+              <span className="material-symbols-outlined">chevron_right</span>
             </div>
             <div className="row product-row">
               {item.products.map((product, index) => renderCard(product))}

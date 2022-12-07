@@ -1,15 +1,77 @@
-import React, { createContext, useContext } from "react";
-import { useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
-const Context = createContext({});
+const Context = createContext({
+  state: {},
+  updateFromCart: (item) => {},
+  addToCart: (item) => {},
+  hasShoppingCart: (item) => {},
+  getCartCount: () => 0,
+});
 
-export const useShoppingCart /* değişkenin başında use kullanımı context kullanımında zorunluluktur */ =
-  () => useContext(Context);
+export const useShoppingCart = () => useContext(Context); /* değişkenin başında use kullanımı context kullanımında zorunluluktur */
 
-export const CartProvider = (props) => {
-  const [state, setState] = useState({});
+export const CartProvider = ({ children, initialState = {} }) => {
+  const [state, setState] = useState(initialState);
+  useEffect(() => {
+    window.localStorage.setItem("cart", JSON.stringify(state));
+  }, [state]);
 
+  const addToCart = (item) => {
+    setState((prev) => {
+      return { ...prev, [item.id]: { quantity: 1 } };
+    });
+  };
+
+  /// jsdoc : javascript içerisinde typescript yazmaya olanak tanır
+  /**
+   *
+   * @param {any} item
+   * @param {"minus" | "plus"} type
+   * @returns
+   */
+  const updateFromCart = (item, type) => {
+    if (type === "plus") { 
+      setState((prev) => {
+        prev[item.id].quantity++;
+        return { ...prev };
+      });
+      return;
+    }
+    if (type === "minus") {
+      setState((prev) => {
+        if (prev[item.id].quantity > 1) {
+          prev[item.id].quantity--;
+        } else {
+          delete prev[item.id];
+        }
+        return { ...prev };
+      });
+    }
+  };
+
+  const hasShoppingCart = (item) => {
+    return state[item.id] ? true : false;
+  };
+
+  const getCartCount = () => {
+    let count = 0;
+    Object.keys(state).forEach((id) => {   // Object.keys(state) state'in içindeki keyleri array olarak dönecektir.
+      const item = state[id];
+      count += item.quantity;
+    });
+    return count;
+  };
   return (
-    <Context.Provider value={{ state }}>{props.children}</Context.Provider>
+    <Context.Provider
+      value={{
+        state,
+        updateFromCart,
+        addToCart,
+        hasShoppingCart,
+        getCartCount,
+      }}
+    >
+      {children}
+    </Context.Provider>
   );
 };
