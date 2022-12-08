@@ -6,13 +6,14 @@ import { useShoppingCart } from "../../context/cart-context";
 
 export default function ProductList({ products = [] }) {
   const cart = useShoppingCart();
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]); // bileşende kategorilere göre gruplanmış ürünleri depolar.
   console.log("cart", cart.state);
   useEffect(() => {
-    handleProducts();
+    handleProducts(); // handleProducts() fonksiyonu ürünler değiştiğinde çağrılır ve bu fonksiyon ürünleri kategorilere göre gruplar.
   }, [products]);
 
-  const handleProducts = () => {       // ürünleri kategorilere göre gruplamak için
+  const handleProducts = () => {
+    // ürünleri kategorilere göre gruplamak için
     const state = [];
     products.forEach((product) => {
       const index = state.findIndex((x) => x.id === product.category_id);
@@ -89,7 +90,7 @@ export default function ProductList({ products = [] }) {
             </div>
             <div className="col-2 seeAll">
               <div>Tümünü Gör</div>
-              <span className="material-symbols-outlined">chevron_right</span>
+              <span className="material-symbols-outlined"></span>
             </div>
             <div className="row product-row">
               {item.products.map((product, index) => renderCard(product))}

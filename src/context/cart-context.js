@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-const Context = createContext({ // Bu metotlar ve değerler, CartProvider bileşeninin içinde bulunan diğer bileşenlere aktarmak için kullanılır.
+const Context = createContext({ // Bu SEPET METODLARI ve değerler, CartProvider bileşeninin içinde bulunan diğer bileşenlere aktarmak için kullanılır.
   state: {},
   updateFromCart: (item) => {},
   addToCart: (item) => {},
