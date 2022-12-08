@@ -4,8 +4,15 @@ import App from "./App";
 import { CartProvider } from "./context/cart-context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const getInitialCart = () => {
+  const value = window.localStorage.getItem("cart");
+  if (value) {
+    return JSON.parse(value);
+  }
+  return {}
+}
 root.render(
-  <CartProvider>   {/* contextin içerisindeki state'den çağrıldı */}
+  <CartProvider initialState={getInitialCart()}>   {/* contextin içerisindeki state'den çağrıldı */}
     <App />
   </CartProvider>
 );
