@@ -6,8 +6,8 @@ const cors = require("cors"); // express 4000 de çalışırken react tarafı 30
  * @param {string} text
  * @returns string
  */
-const convertToEn = (text) => {
-	return text
+const convertToEn = (text) => {  // Türkçe karakterleri İngilizce karakterlerine dönüştürür
+	return text        // büyük-küçük harf karakterlerini küçültür.
 		.replace("Ğ", "g")
 		.replace("Ü", "u")
 		.replace("Ş", "s")
@@ -24,41 +24,41 @@ const convertToEn = (text) => {
 		.toLocaleLowerCase();
 };
 const readJson = async (path = "./db/products.json") => {
-	return new Promise((resolve, reject) => {
+	return new Promise((resolve, reject) => {  // Promise, dosyayı okuma işleminin başarılı olup olmadığını belirten bir başarı veya reddetme geri dönüş değeri döndürür.
 		fs.readFile(path, { encoding: "utf-8" }, (err, data) => {
 			if (!err) {
-				return resolve(JSON.parse(data));
+				return resolve(JSON.parse(data)); // JSON.parse() ayrıştırır ve veriyi çözülmüş haliyle döndürür
 			}
-			return reject(err);
+			return reject(err); // hata mesajı
 		});
 	});
 };
 
-const PORT = 4000;
-const app = express();
+const PORT = 4000; // port tanımlama
+const app = express(); // express sayesinde wen sunucusu oluşturulur. bunu da app değişkenine atadık.
 
-app.use(cors());
+app.use(cors()); // Cross-Origin Resource Sharing...sunucunun bir web tarayıcısından yapılan istekleri kabul etmesine izin verir. API'miz farklı bir URL'de olduğu için CORS ile sunucudan veri almamıza olanak sağlar. CORS olmadan çalışmayacaktır.
 
-app.use(express.static("assets")); // get API products
+app.use(express.static("assets")); // API içerisinde belirttiğimiz assets klasörü içerisindeki imageleri sunucuya ekler. Ulaşmamıza olanak sağlar. Ayrıca adres satırından yolunu belirtip de ulaşabiliriz.
 
-app.get("/", (req, res, next) => {
-	res.send("react bootcamp restaurant menu system apiii");
+app.get("/", (req, res, next) => { //bir HTTP GET isteğine yanıt verir ve "res.send()" yöntemiyle bir cevap gönderir.
+	res.send("react bootcamp restaurant menu system apiii");  // get request isteğini cevaplamak içindir.
 });
 
 const sortingFunctions = {
-	"price-asc": (a, b) => (parseFloat(a.price) < parseFloat(b.price) ? -1 : 1),
-	"price-desc": (a, b) => (parseFloat(a.price) < parseFloat(b.price) ? 1 : -1),
-	"name-asc": (a, b) => (convertToEn(a.name) < convertToEn(b.name) ? -1 : 1),
-	"name-desc": (a, b) => (convertToEn(a.name) < convertToEn(b.name) ? 1 : -1),
+	"price-asc": (a, b) => (parseFloat(a.price) < parseFloat(b.price) ? -1 : 1),   // artan fiyat
+	"price-desc": (a, b) => (parseFloat(a.price) < parseFloat(b.price) ? 1 : -1),	// azalan fiyat
+	"name-asc": (a, b) => (convertToEn(a.name) < convertToEn(b.name) ? -1 : 1),     //  a'dan z'ye
+	"name-desc": (a, b) => (convertToEn(a.name) < convertToEn(b.name) ? 1 : -1),	// z'den a'ya
 };
 
-const duration = 2000;
+const duration = 1500; // 57'de tanımladığımız delay için sayfadaki image'lerin kaç saniyede yükleneceğini belirlemek için
 
 const delay = (cb) => {
-	setTimeout(cb, duration);
+	setTimeout(cb, duration); // "setTimeout()" metodunu kullanarak bir zaman aşımı oluşturur ve bu sayede belirtilen bir zaman diliminden sonra bir işlemi gerçekleştirir.
 };
 
-app.get("/api/products", async (req, res, next) => {
+app.get("/api/products", async (req, res, next) => {    //GET isteği yaparsa, sunucu bu isteğe yanıt olarak bir ürün listesi döndürür
 	const keyword = convertToEn(req.query.keyword || "");
 	const categoryId = req.query.categoryId || "";
 	const productId = req.query.id || "";
