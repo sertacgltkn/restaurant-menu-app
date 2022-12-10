@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { formatPrice } from "../../utils";
 import "./style.css";
-import Button from "../button";
 import { useShoppingCart } from "../../context/cart-context";
+import addToBasket from "../add-to-basket";
+import AddToBasket from "../add-to-basket";
 
 export default function ProductList({ products = [] }) {
   const cart = useShoppingCart();
   const [items, setItems] = useState([]); // bileşende kategorilere göre gruplanmış ürünleri depolar.
-  console.log("cart", cart.state);
+  
   useEffect(() => {
     handleProducts(); // handleProducts() fonksiyonu ürünler değiştiğinde çağrılır ve bu fonksiyon ürünleri kategorilere göre gruplar.
   }, [products]);
@@ -30,10 +31,6 @@ export default function ProductList({ products = [] }) {
     setItems(state);
   };
 
-  const addToBasket = (item) => {
-    cart.addToCart(item);
-  };
-
   const renderCard = (item) => {
     return (
       <div className="col-3" key={item.id}>
@@ -42,36 +39,7 @@ export default function ProductList({ products = [] }) {
           <div className="card-body">
             <h5 className="card-title">{item.name}</h5>
             <div className="custom-card-footer">
-              {cart.hasShoppingCart(item) ? (
-                <div
-                  className="btn-group"
-                  role="group"
-                  aria-label="Basic example"
-                >
-                  <button
-                    onClick={() => cart.updateFromCart(item, "minus")}
-                    className="btn btn-danger"
-                  >
-                    -
-                  </button>
-                  <button type="button" className="btn btn-danger">
-                    {cart.state[item.id].quantity}
-                  </button>
-                  <button
-                    onClick={() => cart.updateFromCart(item, "plus")}
-                    className="btn btn-danger"
-                  >
-                    +
-                  </button>
-                </div>
-              ) : (
-                <Button
-                  onClick={() => addToBasket(item)}
-                  className="btn btn-primary"
-                >
-                  Sepete Ekle
-                </Button>
-              )}
+              <AddToBasket item={item}/>
               <span>{formatPrice(item.price)}</span>
             </div>
           </div>

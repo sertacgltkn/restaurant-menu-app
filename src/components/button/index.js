@@ -1,8 +1,17 @@
 import React from "react";
 
-export default function Button({ className = "btn btn-default", ...props }) {
+export default function Button({
+  className = "btn btn-primary",
+  fullwidth = false,
+  ...props
+}) {
   return (
-    <button onClick={props.onClick} className={className}>
+    <button
+      style={{ width: fullwidth ? "100%" : "auto" }}
+      onClick={props.onClick}
+      className={className}
+      {...props}
+    >
       {props.children}
     </button>
   );

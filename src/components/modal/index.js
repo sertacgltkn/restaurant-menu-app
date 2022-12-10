@@ -1,4 +1,5 @@
 import React from "react";
+import { CloseIcon } from "../icons";
 
 export default function Modal({ show, onClose, children, title }) {
 	if (!show) return null;
@@ -11,12 +12,7 @@ export default function Modal({ show, onClose, children, title }) {
 						<h5 className="modal-title">
 							{title}
 						</h5>
-						<button
-							type="button"
-							className="btn-close"
-							onClick={onClose}
-							aria-label="Close"
-						></button>
+						<CloseIcon onClick={onClose}/>
 					</div>
 					<div className="modal-body">{children}</div>
 				</div>
