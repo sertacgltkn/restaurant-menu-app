@@ -1,6 +1,7 @@
 .product-image {
 	height: 140px;
 	width: 170px;
+	cursor: pointer;
 }
 .product-info {
 	margin-left: 10px;

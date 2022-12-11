@@ -1,13 +1,15 @@
-const express = require("express"); // import express from "express" e karşılık geliyor.
-const fs = require("fs");   // node.js kurulduğunda dahili olarak gelir, (file system)
-const cors = require("cors"); // express 4000 de çalışırken react tarafı 3000 de çalışıyor, ikisi arasındaki senkronizasyon için "cors"
+// import express from "express"
+
+const express = require("express");
+const fs = require("fs");
+const cors = require("cors");
 /**
  *
  * @param {string} text
  * @returns string
  */
-const convertToEn = (text) => {  // Türkçe karakterleri İngilizce karakterlerine dönüştürür
-	return text        // büyük-küçük harf karakterlerini küçültür.
+const convertToEn = (text) => {
+	return text
 		.replace("Ğ", "g")
 		.replace("Ü", "u")
 		.replace("Ş", "s")
@@ -24,41 +26,41 @@ const convertToEn = (text) => {  // Türkçe karakterleri İngilizce karakterler
 		.toLocaleLowerCase();
 };
 const readJson = async (path = "./db/products.json") => {
-	return new Promise((resolve, reject) => {  // Promise, dosyayı okuma işleminin başarılı olup olmadığını belirten bir başarı veya reddetme geri dönüş değeri döndürür.
+	return new Promise((resolve, reject) => {
 		fs.readFile(path, { encoding: "utf-8" }, (err, data) => {
 			if (!err) {
-				return resolve(JSON.parse(data)); // JSON.parse() ayrıştırır ve veriyi çözülmüş haliyle döndürür
+				return resolve(JSON.parse(data));
 			}
-			return reject(err); // hata mesajı
+			return reject(err);
 		});
 	});
 };
 
-const PORT = 4000; // port tanımlama
-const app = express(); // express sayesinde wen sunucusu oluşturulur. bunu da app değişkenine atadık.
+const PORT = 4000;
+const app = express();
 
-app.use(cors()); // Cross-Origin Resource Sharing...sunucunun bir web tarayıcısından yapılan istekleri kabul etmesine izin verir. API'miz farklı bir URL'de olduğu için CORS ile sunucudan veri almamıza olanak sağlar. CORS olmadan çalışmayacaktır.
+app.use(cors());
 
-app.use(express.static("assets")); // API içerisinde belirttiğimiz assets klasörü içerisindeki imageleri sunucuya ekler. Ulaşmamıza olanak sağlar. Ayrıca adres satırından yolunu belirtip de ulaşabiliriz.
+app.use(express.static("assets"));
 
-app.get("/", (req, res, next) => { //bir HTTP GET isteğine yanıt verir ve "res.send()" yöntemiyle bir cevap gönderir.
-	res.send("react bootcamp restaurant menu system apiii");  // get request isteğini cevaplamak içindir.
+app.get("/", (req, res, next) => {
+	res.send("react bootcamp restaurant menu system api");
 });
 
 const sortingFunctions = {
-	"price-asc": (a, b) => (parseFloat(a.price) < parseFloat(b.price) ? -1 : 1),   // artan fiyat
-	"price-desc": (a, b) => (parseFloat(a.price) < parseFloat(b.price) ? 1 : -1),	// azalan fiyat
-	"name-asc": (a, b) => (convertToEn(a.name) < convertToEn(b.name) ? -1 : 1),     //  a'dan z'ye
-	"name-desc": (a, b) => (convertToEn(a.name) < convertToEn(b.name) ? 1 : -1),	// z'den a'ya
+	"price-asc": (a, b) => (parseFloat(a.price) < parseFloat(b.price) ? -1 : 1),
+	"price-desc": (a, b) => (parseFloat(a.price) < parseFloat(b.price) ? 1 : -1),
+	"name-asc": (a, b) => (convertToEn(a.name) < convertToEn(b.name) ? -1 : 1),
+	"name-desc": (a, b) => (convertToEn(a.name) < convertToEn(b.name) ? 1 : -1),
 };
 
-const duration = 1500; // 57'de tanımladığımız delay için sayfadaki image'lerin kaç saniyede yükleneceğini belirlemek için
+const duration = 2000;
 
 const delay = (cb) => {
-	setTimeout(cb, duration); // "setTimeout()" metodunu kullanarak bir zaman aşımı oluşturur ve bu sayede belirtilen bir zaman diliminden sonra bir işlemi gerçekleştirir.
+	setTimeout(cb, duration);
 };
 
-app.get("/api/products", async (req, res, next) => {    //GET isteği yaparsa, sunucu bu isteğe yanıt olarak bir ürün listesi döndürür
+app.get("/api/products", async (req, res, next) => {
 	const keyword = convertToEn(req.query.keyword || "");
 	const categoryId = req.query.categoryId || "";
 	const productId = req.query.id || "";

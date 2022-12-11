@@ -1,71 +1,68 @@
 import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { formatPrice } from "../../utils";
-import "./style.css";
-import { useShoppingCart } from "../../context/cart-context";
-import addToBasket from "../add-to-basket";
 import AddToBasket from "../add-to-basket";
+import ProductCard from "../product-card";
 
-export default function ProductList({ products = [] }) {
-  const cart = useShoppingCart();
-  const [items, setItems] = useState([]); // bileşende kategorilere göre gruplanmış ürünleri depolar.
-  
-  useEffect(() => {
-    handleProducts(); // handleProducts() fonksiyonu ürünler değiştiğinde çağrılır ve bu fonksiyon ürünleri kategorilere göre gruplar.
-  }, [products]);
+import "./style.css";
 
-  const handleProducts = () => {
-    // ürünleri kategorilere göre gruplamak için
-    const state = [];
-    products.forEach((product) => {
-      const index = state.findIndex((x) => x.id === product.category_id);
-      if (index === -1) {
-        state.push({
-          id: product.category_id,
-          name: product.category,
-          products: [product],
-        });
-      } else {
-        state[index].products.push(product);
-      }
-    });
-    setItems(state);
-  };
+export default function ProductList({
+	products = [],
+	showCategoryLink = true,
+}) {
+	const [items, setItems] = useState([]);
+	const navigate = useNavigate();
 
-  const renderCard = (item) => {
-    return (
-      <div className="col-3" key={item.id}>
-        <div className="card">
-          <img src={item.image_url} className="card-img-top" alt={item.name} />
-          <div className="card-body">
-            <h5 className="card-title">{item.name}</h5>
-            <div className="custom-card-footer">
-              <AddToBasket item={item}/>
-              <span>{formatPrice(item.price)}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  };
+	useEffect(() => {
+		handleProducts();
+	}, [products]);
 
-  return (
-    <>
-      {items.map((item, index) => {
-        return (
-          <div className="row category-row" key={index}>
-            <div className="col-10">
-              <div className="category-title">{item.name}</div>
-            </div>
-            <div className="col-2 seeAll">
-              <div>Tümünü Gör</div>
-              <span className="material-symbols-outlined"></span>
-            </div>
-            <div className="row product-row">
-              {item.products.map((product, index) => renderCard(product))}
-            </div>
-          </div>
-        );
-      })}
-    </>
-  );
+	const handleProducts = () => {
+		const state = [];
+		products.forEach((product) => {
+			const index = state.findIndex((x) => x.id === product.category_id);
+			if (index === -1) {
+				state.push({
+					id: product.category_id,
+					name: product.category,
+					products: [product],
+				});
+			} else {
+				state[index].products.push(product);
+			}
+		});
+		setItems(state);
+	};
+
+	return (
+		<>
+			{items.map((item, index) => {
+				return (
+					<div className="row category-row" key={index}>
+						<div className="col-10">
+							<div className="category-title">{item.name}</div>
+						</div>
+						<div
+							className="col-2 seeAll"
+							style={{ visibility: showCategoryLink ? "visible" : "hidden" }}
+						>
+							<Link to={`/kategoriler/${item.id}`}>Tümünü Gör</Link>
+							<span className="material-symbols-outlined">chevron_right</span>
+						</div>
+						<div className="row product-row">
+							{item.products.map((product, index) => (
+								<ProductCard
+									key={index}
+									item={product}
+									containerProps={{
+										className: "col-3",
+									}}
+								/>
+							))}
+						</div>
+					</div>
+				);
+			})}
+		</>
+	);
 }

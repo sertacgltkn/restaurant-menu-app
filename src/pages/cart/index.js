@@ -8,20 +8,21 @@ import { RemoveIcon } from "../../components/icons";
 import NoResult from "../../components/no-result";
 import { API_BASE_URL } from "../../config";
 import { useShoppingCart } from "../../context/cart-context";
-import { formatPrice } from "../../utils";
+import { appToast, formatPrice } from "../../utils";
 import "./style.css";
 
 export default function CartPage() {
 	const navigate = useNavigate();
 	const [keyword, setKeyword] = useState("");
 	const [items, setItems] = useState([]);
+	const [showSorting, setShowSorting] = useState(false);
 	const { state, removeFromCart, removeCartItems } = useShoppingCart();
-
+	const [selectedSorting, setSelectedSorting] = useState("");
 	useEffect(() => {
 		loadItems();
 	}, []);
 
-	const loadItems = () => {
+	const loadItems = (sorting = "") => {
 		const cache = JSON.parse(window.localStorage.getItem("cart") || "{}");
 		const queryString = Object.keys(cache)
 			.map((key) => {
@@ -30,11 +31,15 @@ export default function CartPage() {
 			})
 			.join(",");
 
-		const uri = `${API_BASE_URL}/cart?ids=${queryString}`;
+		const uri = `${API_BASE_URL}/cart?ids=${queryString}&sorting=${sorting}`;
+		appToast.showToast(true);
 		fetch(uri)
 			.then((res) => res.json())
 			.then((items) => {
 				setItems(items);
+				appToast.showToast(false);
+			}).catch(err => {
+				appToast.showToast(false);
 			});
 	};
 
@@ -73,9 +78,22 @@ export default function CartPage() {
 		}
 	};
 
+	const applySorting = () => {
+		loadItems(selectedSorting);
+		setShowSorting(false);
+	};
+
 	return (
 		<>
-			<Header value={keyword} onChange={setKeyword} />
+			<Header
+				value={keyword}
+				onChange={setKeyword}
+				showSorting={showSorting}
+				setShowSorting={setShowSorting}
+				selectedSorting={selectedSorting}
+				onSortingChange={setSelectedSorting}
+				applySorting={applySorting}
+			/>
 			<Container>
 				{filteredCartItems.length > 0 && (
 					<Fragment>
@@ -86,7 +104,7 @@ export default function CartPage() {
 									className="list-group-item d-flex justify-content-between align-items-start"
 								>
 									<div className="ms-2 me-auto d-flex align-items-center justify-content-center">
-										<img src={product.image_url} className="product-image" />
+										<img onClick={() => navigate(`/urunler/${product.id}`)} src={product.image_url} className="product-image" />
 										<div className="product-info">
 											<div className="fw-bold">{product.name}</div>
 											<div>
@@ -133,15 +151,21 @@ export default function CartPage() {
 				)}
 				<NoResult
 					show={filteredCartItems.length === 0}
-					message={`${keyword ? "Arama kriterinize göre sepette bir ürün bulunamdı" : "Sepetinize henüz bir ürün eklemediniz"}`}
+					message={`${
+						keyword
+							? "Arama kriterinize göre sepette bir ürün bulunamdı"
+							: "Sepetinize henüz bir ürün eklemediniz"
+					}`}
 				>
-					<Button onClick={() => {
-						if (keyword) {
-							setKeyword("");
-						} else {
-							navigate("/")
-						}
-					}}>{`${keyword ? "Arama Kriterini Sil" : "Ana Sayfa"}`}</Button>
+					<Button
+						onClick={() => {
+							if (keyword) {
+								setKeyword("");
+							} else {
+								navigate("/");
+							}
+						}}
+					>{`${keyword ? "Arama Kriterini Sil" : "Ana Sayfa"}`}</Button>
 				</NoResult>
 			</Container>
 		</>

@@ -1,35 +1,51 @@
 import React, { useEffect, useState } from "react";
+import Container from "../../components/container";
+import DailyMenu from "../../components/daily-menu";
 import Header from "../../components/header";
+import NoResult from "../../components/no-result";
 import ProductList from "../../components/product-list";
+import { API_BASE_URL } from "../../config";
 import { appToast } from "../../utils";
-import classes from "./style.module.css";
-
-const API_BASE_URL = "http://localhost:4000/api/products";
 
 export default function HomePage() {
 	const [items, setItems] = useState([]);
 	const [keyword, setKeyword] = useState("");
 	const [noResult, setNoResult] = useState(false);
+	const [selectedSorting, setSelectedSorting] = useState("");
+	const [showSorting, setShowSorting] = useState(false);
+	const [dailyMenuItems, setDailyMenuItems] = useState([]);
 
+	useEffect(() => {
+		loadDailyMenuItems();
+	}, []);
+
+	const loadDailyMenuItems = () => {
+		fetch(`${API_BASE_URL}/dailymenu`).then(resp => resp.json()).then(items => {
+			debugger
+			setDailyMenuItems(items);
+		}).catch(err => {
+			console.log(err);
+		})
+	}
+	
 	useEffect(() => {
 		loadItems();
 	}, [keyword]);
 
-	const loadItems = () => {
+	const loadItems = (sorting) => {
 		if (keyword.length === 0 || keyword.length >= 3) {
-			const uri = `${API_BASE_URL}?keyword=${keyword}`;
+			const uri = `${API_BASE_URL}/products?keyword=${keyword}&sorting=${sorting}`;
 			appToast.showToast(true);
 			fetch(uri)
 				.then((resp) => resp.json())
 				.then((data) => {
 					setItems(data);
 					setNoResult(data.length === 0);
-					setTimeout(() => {
-						appToast.showToast(false);
-					}, 1000);
+					appToast.showToast(false);
 				})
 				.catch((err) => {
 					console.log(err);
+					appToast.showToast(false);
 				});
 		}
 	};
@@ -42,17 +58,33 @@ export default function HomePage() {
 		setKeyword(keyword);
 	};
 
+	const applySorting = () => {
+		loadItems(selectedSorting);
+		setShowSorting(false);
+	};
+
 	return (
 		<>
-			<Header onSubmit={onSearch} value={keyword} onChange={setKeyword} />
-			<div className={`container ${classes.appContainer}`}>
+			<Header
+				onSubmit={onSearch}
+				value={keyword}
+				onChange={setKeyword}
+				selectedSorting={selectedSorting}
+				applySorting={applySorting}
+				onSortingChange={(value) => {
+					setSelectedSorting(value);
+				}}
+				showSorting={showSorting}
+				setShowSorting={setShowSorting}
+			/>
+			<Container>
+				<DailyMenu items={dailyMenuItems}/>
 				<ProductList products={items} />
-				{noResult && (
-					<div className={classes.noResult}>
-						{`${keyword}... göre bir sonuç bulunamadı!`}
-					</div>
-				)}
-			</div>
+				<NoResult
+					show={noResult}
+					message={`${keyword}... göre bir sonuç bulunamadı!`}
+				/>
+			</Container>
 		</>
 	);
 }
