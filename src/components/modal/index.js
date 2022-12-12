@@ -5,7 +5,7 @@ export default function Modal({ show, onClose, children, title }) {
 	if (!show) return null;
 
 	return (
-		<div className="modal fade show" tabindex="-1" style={{ display: "block" }}>
+		<div className="modal fade show" tabIndex="-1" style={{ display: "block" }}>
 			<div className="modal-dialog">
 				<div className="modal-content">
 					<div className="modal-header">

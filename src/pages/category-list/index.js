@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
-import Container from "../../components/container";
-import Header from "../../components/header";
-import NoResult from "../../components/no-result";
-import ProductList from "../../components/product-list";
-import { API_BASE_URL } from "../../config";
-import { appToast } from "../../utils";
+import Container from "../components/container";
+import Header from "../components/header";
+import NoResult from "../components/no-result";
+import ProductList from "../components/product-list";
+import { API_BASE_URL } from "../config";
+import { appToast } from "../utils";
 
 export default function CategoryListPage() {
   const [keyword, setKeyword] = useState("");
@@ -36,7 +36,7 @@ export default function CategoryListPage() {
 
 		const formData = new FormData(event.currentTarget);
     const keyword = formData.get("search");
-    debugger
+   
 		setKeyword(keyword);
 	};
 
