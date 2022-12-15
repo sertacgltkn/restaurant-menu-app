@@ -32,7 +32,7 @@ export default function Header({
 			<nav className="navbar navbar-expand-lg bg-light sticky-top ">
 				<div className="container-fluid">
 					<Link className="navbar-brand" to="/">
-						React Bootcamp Restaurant Menu App
+						React Restaurant Menu App
 					</Link>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav me-auto mb-2 mb-lg-0">

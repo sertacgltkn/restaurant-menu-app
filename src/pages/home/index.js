@@ -21,7 +21,7 @@ export default function HomePage() {
 
 	const loadDailyMenuItems = () => {
 		fetch(`${API_BASE_URL}/dailymenu`).then(resp => resp.json()).then(items => {
-			
+			debugger
 			setDailyMenuItems(items);
 		}).catch(err => {
 			console.log(err);

@@ -44,7 +44,7 @@ app.use(cors());
 app.use(express.static("assets"));
 
 app.get("/", (req, res, next) => {
-	res.send("react bootcamp restaurant menu system api");
+	res.send("restaurant menu system api");
 });
 
 const sortingFunctions = {
@@ -54,7 +54,7 @@ const sortingFunctions = {
 	"name-desc": (a, b) => (convertToEn(a.name) < convertToEn(b.name) ? 1 : -1),
 };
 
-const duration = 2000;
+const duration = 900;
 
 const delay = (cb) => {
 	setTimeout(cb, duration);
