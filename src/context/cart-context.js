@@ -4,7 +4,7 @@ const Context = createContext({
 	state: {},
 	updateFromCart: (item) => {},
 	addToCart: (item) => {},
-  hasShoppingCart: (item) => { },
+  	hasShoppingCart: (item) => { },
 	getCartCount: () => 0,
 	/**
 	 * 

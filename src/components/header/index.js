@@ -3,7 +3,8 @@ import { useShoppingCart } from "../../context/cart-context";
 import Modal from "../modal";
 import classes from "./style.module.css";
 import Button from "../button";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; // Link etiketi, bir a etiketi gibi çalışır, ancak bu etiketin tıklama olayından sonra sayfanın yeniden yüklenmesini önler. 
+
 const sortingItems = [
 	{ value: "", title: "Önerilen" },
 	{ value: "price-asc", title: "Fiyata Göre Artan" },
@@ -22,19 +23,19 @@ export default function Header({
 	setShowSorting = () => null,
 	//showFilterArea = true,
 }) {
-	const { getCartCount } = useShoppingCart();
-	const ref = useRef();
+	const { getCartCount } = useShoppingCart();  // Bu bileşen, useShoppingCart adlı bir fonksiyonu kullanır ve bu fonksiyon, bir alışveriş sepeti context'inin sağladığı verileri kullanır. Bu fonksiyon, sepete eklenen ürünlerin sayısını döndürür ve bu sayıyı bir bağlantıda gösterir. Bu bağlantı, sepet sayfasına gider.
+	const ref = useRef(); // useRef fonksiyonu, React'ta bir DOM elementine veya bir JavaScript nesnesine atıfta bulunmak için kullanılır.bir DOM elementinin veya bir JavaScript nesnesinin özelliklerine erişmek ve bu özellikleri değiştirmek için kullanılır.
 
 	const location = useLocation();
-	const showFilterArea = location.pathname.startsWith("/urunler") ? false : true;
+	const showFilterArea = location.pathname.startsWith("/urunler") ? false : true; // Eğer URL yolu "/urunler" ile başlıyorsa, "showFilterArea" değişkenine "false" değerini atıyoruz. Aksi halde "true" değerini atıyoruz.
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg bg-light sticky-top ">
-				<div className="container-fluid">
+			<nav className="navbar navbar-expand-lg bg-light sticky-top "> {/* "sticky-top" sınıfı navbarın sayfanın en üstünde yapışık bir şekilde durmasını sağlar */}
+				<div className="container-fluid"> {/* div elementinin tam genişlikte olmasını ve ekranın tam genişliğine uyum sağlamasını belirtir. */}
 					<Link className="navbar-brand" to="/">
 						React Restaurant Menu App
 					</Link>
-					<div className="collapse navbar-collapse" id="navbarSupportedContent">
+					<div className="collapse navbar-collapse" id="navbarSupportedContent"> {/* navbarın genişliğine göre otomatik olarak gizlenip görüntülenmesi */}
 						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 							<li className="nav-item">
 								<Link className="nav-link" to="/anket">
@@ -54,13 +55,13 @@ export default function Header({
 								ref={ref}
 								onSubmit={(e) => {
 									e.preventDefault();
-									onSubmit(e);
+									onSubmit(e); // bir formun gönderilmesi sırasında tetiklenir ve formun verilerinin sunucuya gönderilmesini sağlar.
 								}}
 								className={classes.searchForm}
 							>
 								<input
 									value={value}
-									onChange={(e) => onChange(e.target.value)}
+									onChange={(e) => onChange(e.target.value)} // elementin değeri değiştiğinde bir fonksiyon çağırılabilir veya elementin değeri değiştiğinde bir değişkenin değeri değiştirilebilir.
 									name="search"
 									className={classes.input}
 									placeholder="Ürün ara..."

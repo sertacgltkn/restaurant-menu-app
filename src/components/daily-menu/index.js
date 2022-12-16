@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 import "./style.css";
 
 export default function DailyMenu({ items = [] }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // useNavigate fonksiyonu, bir React uygulamasında bir tarayıcı gezinme işlemini gerçekleştirmeye yarayan bir fonksiyondur.kullanıcı bir sayfada bir bağlantıya tıkladığında, navigate fonksiyonu kullanılarak kullanıcının tarayıcısının yeni bir URL'ye yönlendirilmesi sağlanabilir.
 	return (
     <>
-      {items.length > 0 && (
-        <h4>Günün Menüsü</h4>
+      {items.length > 0 && ( // items'ın uzunluğunun sıfırdan büyük olup olmadığını kontrol eder. Eğer items dizisi boş değilse (yani sıfırdan büyükse), bu kod satırı içinde bulunan bir h4 etiketi oluşturur. Bu etiket içinde, "Günün Menüsü" yazısı gösterilir.
+        <h4>Günün Menüsü</h4>  
       )}
 			<Carousel className="daily-product-wrapper">
-				{items.map((product) => (
+				{items.map((product) => ( // items dizisi içindeki öğeler için bir döngü oluşturur.
 					<Carousel.Item key={product.id}>
             <img
               onClick={() => navigate(`/urunler/${product.id}`)}
