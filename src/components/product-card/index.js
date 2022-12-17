@@ -11,14 +11,14 @@ export default function ProductCard({
 	const navigate = useNavigate();
 
 	if (!item) {
-		return null
+		return null  // Eğer "item" değişkeni null (yani, boş) değerine eşitse, koşul doğru olur ve "return null" ifadesi çalıştırılır.
 	}
 	return (
 		<div
 			onClick={() => {
-				navigate(`/urunler/${item.id}`);
+				navigate(`/urunler/${item.id}`);    // fonksiyonun çağrılmasıyla birlikte, web sayfasının adresi /urunler/${item.id} şeklinde değiştirilir. Bu ifade, /urunler/ ön ekinin ardından "item.id" değişkeninin değerini içeren bir URL oluşturur. Bu, bir tıklama olayı gerçekleştiğinde bir web sayfasının adresini değiştirerek yeni bir sayfaya geçiş yapar.
 			}}
-			{...containerProps}
+			{...containerProps}  // "Spread" operatorü, bir dizi veya bir nesnenin elemanlarını tek tek ayrıştırır ve bunları bir başka dizi veya nesneye ekler.
 		>
 			<div className="card" {...cardProps}>
 				<img src={item.image_url} className="card-img-top" alt={item.name} />

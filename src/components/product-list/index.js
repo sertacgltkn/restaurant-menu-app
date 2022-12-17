@@ -16,9 +16,9 @@ export default function ProductList({
 		handleProducts();
 	}, [products]);
 
-	const handleProducts = () => {
+	const handleProducts = () => {  // "products" dizisinde gezinir ve bu dizinin elemanlarını işler. İşlevin amacı, "products" dizisindeki ürünleri kategorilere göre gruplamak ve bu grupları bir "state" dizisine eklemektir.
 		const state = [];
-		products.forEach((product) => {
+		products.forEach((product) => {  // İşlev, "products" dizisindeki her bir ürün için "state" dizisinde bir dizi elemanı arar. Eğer bu eleman zaten "state" dizisinde varsa, ürünü bu elemanın "products" özelliğine ekler. Eğer bu eleman "state" dizisinde yoksa, yeni bir eleman oluşturur ve ürünü bu elemanın "products" özelliğine ekler. Bu şekilde, "products" dizisindeki ürünler kategorilere göre gruplandıktan sonra, "state" dizisine eklenir.
 			const index = state.findIndex((x) => x.id === product.category_id);
 			if (index === -1) {
 				state.push({
@@ -30,7 +30,7 @@ export default function ProductList({
 				state[index].products.push(product);
 			}
 		});
-		setItems(state);
+		setItems(state); // Son olarak, "setItems" işlevi çağrılır ve "state" dizisi bu işlevin parametresi olarak geçirilir. Bu işlev, bir "state" değişkenini güncelleyen ve bu değişkeni güncellediğinde sayfayı yenileyen bir "React" işlevidir. Bu sayede, "state" dizisinde yapılan değişiklikler sayfaya yansıtılır ve kullanıcı tarafından görülebilir hale gelir.
 	};
 
 	return (
@@ -43,7 +43,7 @@ export default function ProductList({
 						</div>
 						<div
 							className="col-2 seeAll"
-							style={{ visibility: showCategoryLink ? "visible" : "hidden" }}
+							style={{ visibility: showCategoryLink ? "visible" : "hidden" }}  // "visibility" özelliği, bir nesnenin görünürlüğünü ayarlamaya yarar. Bu özelliğin değeri "visible" ise, nesne görünür hale gelir ve "hidden" ise, görünmez hale gelir.
 						>
 							<Link to={`/kategoriler/${item.id}`}>Tümünü Gör</Link>
 							<span className="material-symbols-outlined">chevron_right</span>

@@ -9,3 +9,6 @@ export default function NoResult({ message = "", show = false, children }) {
     {children}
   </div>;
 }
+
+
+// hiçbir sonuç bulunmadığında bir mesaj göstermek için kullanılır.

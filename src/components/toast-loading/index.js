@@ -16,8 +16,8 @@ export default function ToastLoading() {
 	const ref = useRef();
 
 	const setPosition = (position) => {
-		ref.current.setAttribute("class", classNames.join(" "));
-		ref.current.classList.add(position || defaultClass);
+		ref.current.setAttribute("class", classNames.join(" "));  // "ref.current" nesnesi, bir "React" nesnesinin referansıdır ve bu nesnenin sınıflarını değiştirmek için kullanılır.
+		ref.current.classList.add(position || defaultClass);    // "position" değişkeninin değeri kullanılarak nesnenin sınıfına bir sınıf eklenir. Eğer "position" değişkeni boş ise, "defaultClass" değişkeni kullanılarak nesnenin sınıfına bir sınıf eklenir.
 	};
 
 	const subscriber = (e) => {

@@ -1,12 +1,12 @@
 .searchboxWrapper {
 	padding: 10px;
-	border-radius: 45px;
+	border-radius: 45px;  /* bir nesnenin köşelerinin yuvarlak olmasını sağlar ve bu özellik, bir piksel cinsinden bir değer alır */
 	border: 1px solid #ddd;
 	margin: 30px 0px;
 }
 .input {
 	border: none;
 	height: 40px;
-	outline: none;
+	outline: none;  /* nesnelerin dış çerçevesini ayarlamak ve görünürlüğünü değiştirmek için  */
 	width: 100%;
 }

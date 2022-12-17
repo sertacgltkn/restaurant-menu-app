@@ -12,9 +12,9 @@
   padding-left: 0px;
 }
 .seeAll {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: flex; /* nesnenin içerisindeki tüm öğeleri birbirlerine göre düzenleme ve görünümlerini özelleştirme imkanı verir. */
+  align-items: center;  /* Bu özellik, bir nesnenin içerisindeki öğeleri yatay olarak ortalar. */
+  justify-content: flex-end;  /* Bu özellik, bir nesnenin içerisindeki öğeleri sağ tarafa yaslar. */
   cursor: pointer;
 }
 .card {
@@ -28,8 +28,8 @@
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   transform: scale(1.1);
-  filter: greenscale(10) blur(1px);
-  z-index: 1;
+  filter: greenscale(10) blur(1px);  /* "grayscale" filtresi, bir görseli gri tonlarına çevirir. Bu filtrenin değeri, 0 ile 100 arasında bir sayıdır ve bu sayı, görselin ne kadar gri tonlara çevrileceğini belirtir. Örnekteki "grayscale(10)" ifadesi, görselin %10'u kadar gri tonlara çevirileceğini belirtir. */
+  z-index: 1; /* bir nesnenin öbür nesnelerin üstünde veya altında olmasını belirler. */
 }
 
 .card img {
