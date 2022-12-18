@@ -1,10 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+
 .category-row {
   margin-bottom: 30px;
 }
 .category-title {
-  font-size: 20px;
   font-weight: 600;
+  font-family: "Exo 2", sans-serif;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgb(216, 13, 13) 100%);
+  max-width: 130px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: center;
+  justify-content: center;
+  height: calc(19vh - 4rem);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: skew(0, -10deg);
+  order: 1;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+  border-radius: 30px;
 }
+
+.link-text{
+  background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgb(216, 13, 13) 100%);
+  font-size: small;
+  color: white;
+  touch-action: manipulation;
+  transform: scale(1.35);
+  border-radius: 5px;
+  display: block;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  text-decoration: none;
+  font-family: "Exo 2", sans-serif;
+  transform: skew(10, 30deg);
+  border: 1px solid #5ef4ff;
+  margin: 1px;
+  padding: 1px;
+}
+
+.link-text:hover{
+  background: linear-gradient(-142deg, rgb(0, 0, 0) 0%, rgb(216, 13, 13) 100%);
+  text-decoration: none;
+  color: white;
+}
+
 
 .product-row {
   padding-top: 20px;
@@ -13,8 +60,8 @@
 }
 .seeAll {
   display: flex; /* nesnenin içerisindeki tüm öğeleri birbirlerine göre düzenleme ve görünümlerini özelleştirme imkanı verir. */
-  align-items: center;  /* Bu özellik, bir nesnenin içerisindeki öğeleri yatay olarak ortalar. */
-  justify-content: flex-end;  /* Bu özellik, bir nesnenin içerisindeki öğeleri sağ tarafa yaslar. */
+  align-items: center; /* Bu özellik, bir nesnenin içerisindeki öğeleri yatay olarak ortalar. */
+  justify-content: flex-end; /* Bu özellik, bir nesnenin içerisindeki öğeleri sağ tarafa yaslar. */
   cursor: pointer;
 }
 .card {
@@ -22,14 +69,28 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border: none;
   cursor: pointer;
+  border-radius: 10px 10px 200px 0px;
+  -webkit-border-radius: 10px 10px 200px 0px;
+  -moz-border-radius: 10px 10px 200px 0px;
 }
 .card:hover {
+  color: rgb(0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   transform: scale(1.1);
-  filter: greenscale(10) blur(1px);  /* "grayscale" filtresi, bir görseli gri tonlarına çevirir. Bu filtrenin değeri, 0 ile 100 arasında bir sayıdır ve bu sayı, görselin ne kadar gri tonlara çevrileceğini belirtir. Örnekteki "grayscale(10)" ifadesi, görselin %10'u kadar gri tonlara çevirileceğini belirtir. */
+  filter: greenscale(10) blur(1px); /* "grayscale" filtresi, bir görseli gri tonlarına çevirir. Bu filtrenin değeri, 0 ile 100 arasında bir sayıdır ve bu sayı, görselin ne kadar gri tonlara çevrileceğini belirtir. Örnekteki "grayscale(10)" ifadesi, görselin %10'u kadar gri tonlara çevirileceğini belirtir. */
   z-index: 1; /* bir nesnenin öbür nesnelerin üstünde veya altında olmasını belirler. */
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e74c3c,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e74c3c,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .card img {
@@ -40,4 +101,47 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+
+
+
+
+.button-69 {
+  background-color: initial;
+  background-image: linear-gradient(#8614f8 0, #760be0 100%);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -4px;
+  outline: 0;
+  text-align: center;
+  transition: all .3s cubic-bezier(.05, .03, .35, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: bottom;
+  width: 190px;
+}
+
+.button-69:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 1000px) {
+  .button-69 {
+    font-size: 14px;
+    height: 55px;
+    line-height: 55px;
+    width: 150px;
+  }
 }

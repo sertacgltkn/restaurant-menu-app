@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { formatPrice } from "../../utils";
 import AddToBasket from "../add-to-basket";
+import "./style.css";
 
 export default function ProductCard({
 	item,

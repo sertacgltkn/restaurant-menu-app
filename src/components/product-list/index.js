@@ -45,7 +45,7 @@ export default function ProductList({
 							className="col-2 seeAll"
 							style={{ visibility: showCategoryLink ? "visible" : "hidden" }}  // "visibility" özelliği, bir nesnenin görünürlüğünü ayarlamaya yarar. Bu özelliğin değeri "visible" ise, nesne görünür hale gelir ve "hidden" ise, görünmez hale gelir.
 						>
-							<Link to={`/kategoriler/${item.id}`}>Tümünü Gör</Link>
+							<Link className="link-text" to={`/kategoriler/${item.id}`}>Tümünü Gör</Link>
 							<span className="material-symbols-outlined">chevron_right</span>
 						</div>
 						<div className="row product-row">

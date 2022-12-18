@@ -7,7 +7,11 @@ export default function Button({
 }) {
 	return (
 		<button
-			style={{ width: fullwidth ? "100%" : "auto" }}
+			style={{ width: fullwidth ? "100%" : "auto", border: "2px solid #FFB75E", 
+			background: "#fc466b",  
+			background: "-webkit-linear-gradient(to right, #fc466b, #3f5efb)",  
+			background: "linear-gradient(to right, #fc466b, #000000)"
+			   }}
 			onClick={props.onClick}
 			className={className}
 			{...props}
@@ -16,3 +20,5 @@ export default function Button({
 		</button>
 	);
 }
+
+
