@@ -550,5 +550,230 @@
     "name": "Filtre Kahve",
     "price": 23.00,
     "image_url": "http://localhost:4000/images/Filtre-Kahve.jpg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 80,
+    "name": "Apple Martini",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/apple-martini.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 81,
+    "name": "Vodka Martini",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/vodka-martini.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 82,
+    "name": "Cosmopolitan",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/cosmopolitan.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 83,
+    "name": "Margarita",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/margaritaa.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 84,
+    "name": "Aperol Spritz",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/aperol-spritz.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 85,
+    "name": "Negroni - Americano",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/negroni-americano.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 86,
+    "name": "Ameretto Sour",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/ameretto-sour.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 87,
+    "name": "Lynchburg Lemonade",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/lynchburg-lemonade.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 88,
+    "name": "Long Island",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/long-island.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 89,
+    "name": "Mojito",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/mojito.jpg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 90,
+    "name": "Viski Sour",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/viski-sour.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 91,
+    "name": "Pinacolada",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/pinacolada.jpg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 92,
+    "name": "Zebra",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/zebra.jpg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 93,
+    "name": "Pornstar",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/pornstar.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 94,
+    "name": "Espresso Martini ",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/espresso-martini.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 95,
+    "name": "Bellini",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/bellini.jpeg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 96,
+    "name": "Carolina",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/carolina.jpg"
+  },
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 97,
+    "name": "Midnight Kiss",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/midnight-kiss.jpeg"
+  }
+  ,
+  {
+    "category_id": 2,
+    "category": "Alkollü Kokteyl",
+    "id": 98,
+    "name": "Angel Kiss",
+    "price": 95.00,
+    "image_url": "http://localhost:4000/images/angel-kiss.jpeg"
+  }
+  ,
+  {
+    "category_id": 3,
+    "category": "Alkolsüz Kokteyl",
+    "id": 100,
+    "name": "Mojito Strawberry",
+    "price": 90.00,
+    "image_url": "http://localhost:4000/images/mojito-strawberry.jpeg"
+  }
+  ,
+  {
+    "category_id": 3,
+    "category": "Alkolsüz Kokteyl",
+    "id": 101,
+    "name": "Pina Colada Soft",
+    "price": 90.00,
+    "image_url": "http://localhost:4000/images/pina-colada-soft.jpeg"
+  }
+  ,
+  {
+    "category_id": 3,
+    "category": "Alkolsüz Kokteyl",
+    "id": 102,
+    "name": "Sunrise",
+    "price": 90.00,
+    "image_url": "http://localhost:4000/images/sunrise.jpeg"
+  }
+  ,
+  {
+    "category_id": 3,
+    "category": "Alkolsüz Kokteyl",
+    "id": 103,
+    "name": "Zebra Boom",
+    "price": 90.00,
+    "image_url": "http://localhost:4000/images/zebra-boom.jpeg"
+  }
+  ,
+  {
+    "category_id": 3,
+    "category": "Alkolsüz Kokteyl",
+    "id": 104,
+    "name": "Exotic Summer",
+    "price": 90.00,
+    "image_url": "http://localhost:4000/images/exotic-summer.jpeg"
+  }
+  ,
+  {
+    "category_id": 3,
+    "category": "Alkolsüz Kokteyl",
+    "id": 105,
+    "name": "Green Peace",
+    "price": 90.00,
+    "image_url": "http://localhost:4000/images/green-peace.jpeg"
+  }
+  ,
+  {
+    "category_id": 3,
+    "category": "Alkolsüz Kokteyl",
+    "id": 106,
+    "name": "Mojito Passion",
+    "price": 90.00,
+    "image_url": "http://localhost:4000/images/mojito-passion.jpeg"
+  }
+  ,
+  {
+    "category_id": 3,
+    "category": "Alkolsüz Kokteyl",
+    "id": 107,
+    "name": "Mojito Soft",
+    "price": 90.00,
+    "image_url": "http://localhost:4000/images/mojito-soft.jpeg"
   }
 ]
