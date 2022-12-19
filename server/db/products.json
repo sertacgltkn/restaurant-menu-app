@@ -128,6 +128,158 @@
     "image_url": "http://localhost:4000/images/little-sutlu.png"
   },
   {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 33,
+    "name": "Energy Waffle ",
+    "price": 55,
+    "image_url": "http://localhost:4000/images/energy-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 34,
+    "name": "Snicker Waffle ",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/snickers-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 35,
+    "name": "Ecuador Waffle ",
+    "price": 60,
+    "image_url": "http://localhost:4000/images/ecuador-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 36,
+    "name": "Trivela Waffle ",
+    "price": 62,
+    "image_url": "http://localhost:4000/images/trivela-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 37,
+    "name": "Sunny Waffle ",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/sunny-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 38,
+    "name": "İce Dream Waffle ",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/ice-dream-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 39,
+    "name": "ChestNut Waffle ",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/chestnut-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 40,
+    "name": "Oreo Waffle",
+    "price": 70,
+    "image_url": "http://localhost:4000/images/oreo-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 41,
+    "name": "İdeal Waffle ",
+    "price": 55,
+    "image_url": "http://localhost:4000/images/ideal-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 42,
+    "name": "Marshmallow Waffle ",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/marshmallow-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 43,
+    "name": "Hedonist Waffle",
+    "price": 61,
+    "image_url": "http://localhost:4000/images/hedo-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 44,
+    "name": "Happy Kids Waffle ",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/happy-kids-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 45,
+    "name": " Single Waffle",
+    "price": 55,
+    "image_url": "http://localhost:4000/images/single-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 46,
+    "name": "Berries Waffle ",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/berries-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 47,
+    "name": "Cuba Waffle ",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/cuba-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 48,
+    "name": "Çıtır Special Waffle ",
+    "price": 72,
+    "image_url": "http://localhost:4000/images/citir-special-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 49,
+    "name": "Fruit Mix Waffle ",
+    "price": 70,
+    "image_url": "http://localhost:4000/images/fruit-mix-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 50,
+    "name": "Favourite Waffle ",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/favourite-waffle.jpeg"
+  },
+  {
+    "category_id": 8,
+    "category": "Waffle",
+    "id": 51,
+    "name": "Dual Waffle ",
+    "price": 60,
+    "image_url": "http://localhost:4000/images/dual-waffle.jpeg"
+  },
+  {
     "category_id": 13,
     "category": "Pizza",
     "id": 14,
@@ -174,6 +326,134 @@
     "name": "İtalyano Pizza",
     "price": 68.50,
     "image_url": "http://localhost:4000/images/italiano-pizza.png"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 60,
+    "name": "İzmir Karışık Pizza",
+    "price": 70,
+    "image_url": "http://localhost:4000/images/izmir-karışık.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 61,
+    "name": "Füme Kaburga Pizza",
+    "price": 80,
+    "image_url": "http://localhost:4000/images/füme-kaburga.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 62,
+    "name": "4 Peynirli Pizza",
+    "price": 65,
+    "image_url": "http://localhost:4000/images/4-peynirli.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 63,
+    "name": "Ege Pizza",
+    "price": 70,
+    "image_url": "http://localhost:4000/images/ege.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 64,
+    "name": "Luna Pizza",
+    "price": 75,
+    "image_url": "http://localhost:4000/images/luna.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 65,
+    "name": "Mantarlı - Sosisli Pizza",
+    "price": 75,
+    "image_url": "http://localhost:4000/images/mantarlı-sosisli.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 66,
+    "name": "Vegeterian Pizza",
+    "price": 60,
+    "image_url": "http://localhost:4000/images/vegetarian.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 67,
+    "name": "Special Pizza",
+    "price": 80,
+    "image_url": "http://localhost:4000/images/special.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 68,
+    "name": "Dream Pizza",
+    "price": 80,
+    "image_url": "http://localhost:4000/images/dream.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 69,
+    "name": "Kapadokya Pizza",
+    "price": 75,
+    "image_url": "http://localhost:4000/images/kapadokya.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 70,
+    "name": "Margarita Pizza",
+    "price": 75,
+    "image_url": "http://localhost:4000/images/margarita.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 71,
+    "name": "Mexican Pizza",
+    "price": 75,
+    "image_url": "http://localhost:4000/images/mexican.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 72,
+    "name": "Kavurmalım Pizza",
+    "price": 75,
+    "image_url": "http://localhost:4000/images/kavurmalım.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 73,
+    "name": "Mix Pizza",
+    "price": 75,
+    "image_url": "http://localhost:4000/images/mix.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 74,
+    "name": "Ton Balıklı Pizza",
+    "price": 75,
+    "image_url": "http://localhost:4000/images/ton-balıklı.jpeg"
+  },
+  {
+    "category_id": 13,
+    "category": "Pizza",
+    "id": 75,
+    "name": "Akdeniz Pizza",
+    "price": 75,
+    "image_url": "http://localhost:4000/images/akdeniz.jpeg"
   },
   {
     "category_id": 20,
