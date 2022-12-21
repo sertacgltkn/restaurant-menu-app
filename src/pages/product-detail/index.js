@@ -7,35 +7,35 @@ import { API_BASE_URL } from "../../config";
 import { appToast } from "../../utils";
 
 export default function ProductDetailPage() {
-	const [product, setProduct] = useState();
+  const [product, setProduct] = useState();
 
-	const params = useParams();
+  const params = useParams();
 
-	useEffect(() => {
-		loadItem();
-	}, [params.id]);
+  useEffect(() => {
+    loadItem();
+  }, [params.id]);
 
-	const loadItem = () => {
-		const uri = `${API_BASE_URL}/products?id=${params.id}`;
-		appToast.showToast({ show: true, message: "Ürün bilgileri yükleniyor..." });
-		fetch(uri)
-			.then((resp) => resp.json())
-			.then((item) => {
-				setProduct(item);
-				appToast.showToast(false);
-			})
-			.catch((err) => {
-				console.log(err);
-			});
-	};
-	return (
-		<>
-			<Header />
-			<Container>
-				<div className="row">
-					<ProductCard item={product} containerProps={{ className: "col-6" }} />
-				</div>
-			</Container>
-		</>
-	);
+  const loadItem = () => {
+    const uri = `${API_BASE_URL}/products?id=${params.id}`;
+    appToast.showToast({ show: true, message: "Ürün bilgileri yükleniyor..." });
+    fetch(uri)
+      .then((resp) => resp.json())
+      .then((item) => {
+        setProduct(item);
+        appToast.showToast(false);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  return (
+    <>
+      <Header />
+      <Container>
+        <div className="row">
+          <ProductCard item={product} containerProps={{ className: "col-6" }} />
+        </div>
+      </Container>
+    </>
+  );
 }

@@ -5,7 +5,7 @@
 }
 .product-info {
 	margin-left: 10px;
-	display: flex;
+	display: flex; /* esnek düzenleme */
 	flex-direction: column;
 }
 .basket-actions {

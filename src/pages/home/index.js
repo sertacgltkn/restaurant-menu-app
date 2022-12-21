@@ -8,83 +8,86 @@ import { API_BASE_URL } from "../../config";
 import { appToast } from "../../utils";
 
 export default function HomePage() {
-	const [items, setItems] = useState([]);
-	const [keyword, setKeyword] = useState("");
-	const [noResult, setNoResult] = useState(false);
-	const [selectedSorting, setSelectedSorting] = useState("");
-	const [showSorting, setShowSorting] = useState(false);
-	const [dailyMenuItems, setDailyMenuItems] = useState([]);
+  const [items, setItems] = useState([]);
+  const [keyword, setKeyword] = useState("");
+  const [noResult, setNoResult] = useState(false);
+  const [selectedSorting, setSelectedSorting] = useState("");
+  const [showSorting, setShowSorting] = useState(false);
+  const [dailyMenuItems, setDailyMenuItems] = useState([]);
 
-	useEffect(() => {
-		loadDailyMenuItems();
-	}, []);
+  useEffect(() => {
+    loadDailyMenuItems();
+  }, []);
 
-	const loadDailyMenuItems = () => {
-		fetch(`${API_BASE_URL}/dailymenu`).then(resp => resp.json()).then(items => {
-			debugger
-			setDailyMenuItems(items);
-		}).catch(err => {
-			console.log(err);
-		})
-	}
-	
-	useEffect(() => {
-		loadItems();
-	}, [keyword]);
+  const loadDailyMenuItems = () => {
+    fetch(`${API_BASE_URL}/dailymenu`)
+      .then((resp) => resp.json())
+      .then((items) => {
+        debugger;
+        setDailyMenuItems(items);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
-	const loadItems = (sorting) => {
-		if (keyword.length === 0 || keyword.length >= 3) {
-			const uri = `${API_BASE_URL}/products?keyword=${keyword}&sorting=${sorting}`;
-			appToast.showToast(true);
-			fetch(uri)
-				.then((resp) => resp.json())
-				.then((data) => {
-					setItems(data);
-					setNoResult(data.length === 0);
-					appToast.showToast(false);
-				})
-				.catch((err) => {
-					console.log(err);
-					appToast.showToast(false);
-				});
-		}
-	};
+  useEffect(() => {
+    loadItems();
+  }, [keyword]);
 
-	const onSearch = (event) => {
-		event.preventDefault();
+  const loadItems = (sorting) => {
+    if (keyword.length === 0 || keyword.length >= 3) {
+      const uri = `${API_BASE_URL}/products?keyword=${keyword}&sorting=${sorting}`;
+      appToast.showToast(true);
+      fetch(uri)
+        .then((resp) => resp.json())
+        .then((data) => {
+          setItems(data);
+          setNoResult(data.length === 0);
+          appToast.showToast(false);
+        })
+        .catch((err) => {
+          console.log(err);
+          appToast.showToast(false);
+        });
+    }
+  };
 
-		const formData = new FormData(event.currentTarget);
-		const keyword = formData.get("search");
-		setKeyword(keyword);
-	};
+  const onSearch = (event) => {
+    event.preventDefault();
 
-	const applySorting = () => {
-		loadItems(selectedSorting);
-		setShowSorting(false);
-	};
+    const formData = new FormData(event.currentTarget);
+    const keyword = formData.get("search");
+    setKeyword(keyword);
+  };
 
-	return (
-		<>
-			<Header
-				onSubmit={onSearch}
-				value={keyword}
-				onChange={setKeyword}
-				selectedSorting={selectedSorting}
-				applySorting={applySorting}
-				onSortingChange={(value) => {
-					setSelectedSorting(value);
-				}}
-				showSorting={showSorting}
-				setShowSorting={setShowSorting}
-			/>
-			<Container>
-				<DailyMenu items={dailyMenuItems}/>
-				<ProductList products={items} />
-				<NoResult
-					show={noResult}
-					message={`${keyword}... göre bir sonuç bulunamadı!`}
-				/>
-			</Container>
-		</>
-	);
+  const applySorting = () => {
+    loadItems(selectedSorting);
+    setShowSorting(false);
+  };
+
+  return (
+    <>
+      <Header
+        onSubmit={onSearch}
+        value={keyword}
+        onChange={setKeyword}
+        selectedSorting={selectedSorting}
+        applySorting={applySorting}
+        onSortingChange={(value) => {
+          setSelectedSorting(value);
+        }}
+        showSorting={showSorting}
+        setShowSorting={setShowSorting}
+      />
+      <Container>
+        <DailyMenu items={dailyMenuItems} />
+        <ProductList products={items} />
+        <NoResult
+          show={noResult}
+          message={`${keyword}... göre bir sonuç bulunamadı!`}
+        />
+      </Container>
+    </>
+  );
 }

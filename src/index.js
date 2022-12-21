@@ -10,10 +10,10 @@ const getInitialCart = () => {
   if (value) {
     return JSON.parse(value);
   }
-  return {}
-}
+  return {};
+};
 root.render(
-	<CartProvider initialState={getInitialCart()}>
-		<App />
-	</CartProvider>
+  <CartProvider initialState={getInitialCart()}>
+    <App />
+  </CartProvider>
 );
