@@ -10,7 +10,7 @@ export default function DailyMenu({ items = [] }) {
       {items.length > 0 && ( // items'ın uzunluğunun sıfırdan büyük olup olmadığını kontrol eder. Eğer items dizisi boş değilse (yani sıfırdan büyükse), bu kod satırı içinde bulunan bir h4 etiketi oluşturur. Bu etiket içinde, "Günün Menüsü" yazısı gösterilir.
         <h4>Günün Menüsü</h4>  
       )}
-			<Carousel className="daily-product-wrapper">
+			<Carousel pause="hover" fade className="daily-product-wrapper">
 				{items.map((product) => ( // items dizisi içindeki öğeler için bir döngü oluşturur.
 					<Carousel.Item key={product.id}>
             <img

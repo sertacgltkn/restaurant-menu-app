@@ -17,3 +17,7 @@ root.render(
     <App />
   </CartProvider>
 );
+
+
+const element = document.querySelector("#root");
+element.style.backgroundColor = "#ffc107";

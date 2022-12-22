@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Container from "../../components/container";
 import DailyMenu from "../../components/daily-menu";
 import Header from "../../components/header";
+import Footer from "../../components/footer";
 import NoResult from "../../components/no-result";
 import ProductList from "../../components/product-list";
 import { API_BASE_URL } from "../../config";
@@ -88,6 +89,7 @@ export default function HomePage() {
           message={`${keyword}... göre bir sonuç bulunamadı!`}
         />
       </Container>
+      <Footer />
     </>
   );
 }

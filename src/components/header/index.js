@@ -30,7 +30,7 @@ export default function Header({
 	const showFilterArea = location.pathname.startsWith("/urunler") ? false : true; // Eğer URL yolu "/urunler" ile başlıyorsa, "showFilterArea" değişkenine "false" değerini atıyoruz. Aksi halde "true" değerini atıyoruz.
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg sticky-top "> {/* "sticky-top" sınıfı navbarın sayfanın en üstünde yapışık bir şekilde durmasını sağlar */}
+			<nav className="navbar navbar-expand-lg bg-warning sticky-top "> {/* "sticky-top" sınıfı navbarın sayfanın en üstünde yapışık bir şekilde durmasını sağlar */}
 				<div className="container-fluid"> {/* div elementinin tam genişlikte olmasını ve ekranın tam genişliğine uyum sağlamasını belirtir. */}
 					<Link className="navbar-brand" to="/">
 						React Restaurant Menu App

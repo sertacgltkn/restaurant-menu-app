@@ -3,6 +3,6 @@ import classes from "./style.module.css";
 
 export default function Container(props) {
 	return (
-		<div className={`container ${classes.appContainer}`}>{props.children}</div>
+		<div style={{ background: "#ffc107"}} className={`container ${classes.appContainer}`}>{props.children}</div>
 	);
 }

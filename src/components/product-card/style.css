@@ -3,3 +3,7 @@
     -webkit-border-radius: 0px 0px 88px 0px;
     -moz-border-radius: 0px 0px 88px 0px;
 }
+
+.body {
+    background-color: #ffc107;
+}
