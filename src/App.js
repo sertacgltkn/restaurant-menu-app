@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { signUp, signIn } from "./config/firebase";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ToastLoading from "./components/toast-loading";
 import HomePage from "./pages/home";
@@ -9,6 +10,28 @@ import CategoryListPage from "./pages/category-list";
 import ProductDetailPage from "./pages/product-detail";
 
 export default function App() {
+
+  useEffect(() => {
+
+    signIn("sertacgltkn@gmail.com" , "1234567").then(() => {
+      console.log("Done")
+    }).catch(e => {
+      console.log(e)
+
+    } )
+
+
+ /*    signUp("Sertac", "sertacgltkn@gmail.com" , "1234567").then(()=> {
+      console.log("Done")
+    }).catch(e => {
+      console.log(e)
+    }) */
+
+    
+  }, []);
+
+
+
   return (
     <React.Fragment>
       <BrowserRouter>
