@@ -5,7 +5,8 @@
     "id": 2,
     "name": "Mojito ",
     "price": 17,
-    "image_url": "http://localhost:4000/images/mojito.jpeg"
+    "image_url2": "http://localhost:4000/images/mojito.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789812/mojito_y09spu.jpg"
   },
   {
     "category_id": 1,
@@ -13,7 +14,8 @@
     "id": 3,
     "name": "Gökkuşağı",
     "price": 19,
-    "image_url": "http://localhost:4000/images/gokkusagi.png"
+    "image_url2": "http://localhost:4000/images/gokkusagi.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789774/gokkusagi_wly5wj.png"
   },
   {
     "category_id": 1,
@@ -21,7 +23,8 @@
     "id": 4,
     "name": "Churcill",
     "price": 10.9,
-    "image_url": "http://localhost:4000/images/churchill.png"
+    "image_url2": "http://localhost:4000/images/churchill.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789756/churchill_wchpr0.png"
   },
   {
     "category_id": 1,
@@ -29,7 +32,8 @@
     "id": 5,
     "name": "Land Island",
     "price": 18,
-    "image_url": "http://localhost:4000/images/land-island.png"
+    "image_url2": "http://localhost:4000/images/land-island.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789786/land-island_c4ejzk.png"
   },
   {
     "category_id": 1,
@@ -37,7 +41,8 @@
     "id": 6,
     "name": "Orange Marry",
     "price": 19,
-    "image_url": "http://localhost:4000/images/orange-marry.png"
+    "image_url2": "http://localhost:4000/images/orange-marry.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789821/orange-marry_k4xrxk.png"
   },
   {
     "category_id": 1,
@@ -45,7 +50,8 @@
     "id": 7,
     "name": "Green Apple",
     "price": 18.9,
-    "image_url": "http://localhost:4000/images/green-apple.png"
+    "image_url2": "http://localhost:4000/images/green-apple.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789773/green-apple_cp5nsy.png"
   },
   {
     "category_id": 1,
@@ -53,7 +59,8 @@
     "id": 8,
     "name": "Karadut Şerbeti",
     "price": 15.9,
-    "image_url": "http://localhost:4000/images/karadut-şerbeti.jpg"
+    "image_url2": "http://localhost:4000/images/karadut-şerbeti.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789787/karadut-%C5%9Ferbeti_sd8v9f.jpg"
   },
   {
     "category_id": 1,
@@ -61,7 +68,8 @@
     "id": 9,
     "name": "Milkshake",
     "price": 21.9,
-    "image_url": "http://localhost:4000/images/milkshake.jpg"
+    "image_url2": "http://localhost:4000/images/milkshake.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789808/milkshake_hrkxy2.jpg"
   },
   {
     "category_id": 1,
@@ -69,7 +77,8 @@
     "id": 10,
     "name": "Limonata",
     "price": 12.9,
-    "image_url": "http://localhost:4000/images/limonata.jpg"
+    "image_url2": "http://localhost:4000/images/limonata.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789782/limonata_z6rfos.jpg"
   },
   {
     "category_id": 1,
@@ -77,7 +86,8 @@
     "id": 11,
     "name": "Soğuk Çay",
     "price": 15.9,
-    "image_url": "http://localhost:4000/images/soğuk-çay.jpeg"
+    "image_url2": "http://localhost:4000/images/soğuk-çay.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789828/so%C4%9Fuk-%C3%A7ay_dn4iav.jpg"
   },
   {
     "category_id": 1,
@@ -85,7 +95,8 @@
     "id": 12,
     "name": "Buzlu Kahve",
     "price": 19.9,
-    "image_url": "http://localhost:4000/images/buzlu-kahve.jpg"
+    "image_url2": "http://localhost:4000/images/buzlu-kahve.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789758/buzlu-kahve_ai2acq.jpg"
   },
   {
     "category_id": 1,
@@ -93,7 +104,8 @@
     "id": 13,
     "name": "Sangria",
     "price": 19.9,
-    "image_url": "http://localhost:4000/images/Sangria.jpg"
+    "image_url2": "http://localhost:4000/images/Sangria.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789843/Sangria_l4uvwu.jpg"
   },
   {
     "category_id": 8,
@@ -101,7 +113,8 @@
     "id": 9,
     "name": "Dondurmalı Waffle",
     "price": 40.9,
-    "image_url": "http://localhost:4000/images/dondurmali-waffle.png"
+    "image_url2": "http://localhost:4000/images/dondurmali-waffle.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789767/dondurmali-waffle_hmqooj.png"
   },
   {
     "category_id": 8,
@@ -109,7 +122,8 @@
     "id": 10,
     "name": "Little Bitter",
     "price": 36.9,
-    "image_url": "http://localhost:4000/images/little-bitter.png"
+    "image_url2": "http://localhost:4000/images/little-bitter.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789803/little-bitter_bkgw2x.png"
   },
   {
     "category_id": 8,
@@ -117,7 +131,8 @@
     "id": 11,
     "name": "Classic Waffle",
     "price": 55,
-    "image_url": "http://localhost:4000/images/classic-waffle.png"
+    "image_url2": "http://localhost:4000/images/classic-waffle.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789781/classic-waffle_crmksm.png"
   },
   {
     "category_id": 8,
@@ -125,7 +140,8 @@
     "id": 12,
     "name": "Little Sütlü ",
     "price": 36.9,
-    "image_url": "http://localhost:4000/images/little-sutlu.png"
+    "image_url2": "http://localhost:4000/images/little-sutlu.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789801/little-sutlu_blma76.png"
   },
   {
     "category_id": 8,
@@ -133,7 +149,8 @@
     "id": 33,
     "name": "Energy Waffle ",
     "price": 55,
-    "image_url": "http://localhost:4000/images/energy-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/energy-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789763/energy-waffle_n0on1y.jpg"
   },
   {
     "category_id": 8,
@@ -141,7 +158,8 @@
     "id": 34,
     "name": "Snicker Waffle ",
     "price": 65,
-    "image_url": "http://localhost:4000/images/snickers-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/snickers-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789824/snickers-waffle_qowhnq.jpg"
   },
   {
     "category_id": 8,
@@ -149,7 +167,8 @@
     "id": 35,
     "name": "Ecuador Waffle ",
     "price": 60,
-    "image_url": "http://localhost:4000/images/ecuador-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/ecuador-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789762/ecuador-waffle_wdf14y.jpg"
   },
   {
     "category_id": 8,
@@ -157,7 +176,8 @@
     "id": 36,
     "name": "Trivela Waffle ",
     "price": 62,
-    "image_url": "http://localhost:4000/images/trivela-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/trivela-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789831/trivela-waffle_himmhj.jpg"
   },
   {
     "category_id": 8,
@@ -165,7 +185,8 @@
     "id": 37,
     "name": "Sunny Waffle ",
     "price": 65,
-    "image_url": "http://localhost:4000/images/sunny-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/sunny-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789826/sunny-waffle_t8zrfr.jpg"
   },
   {
     "category_id": 8,
@@ -173,7 +194,8 @@
     "id": 38,
     "name": "İce Dream Waffle ",
     "price": 65,
-    "image_url": "http://localhost:4000/images/ice-dream-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/ice-dream-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789774/ice-dream-waffle_fmzvr8.jpg"
   },
   {
     "category_id": 8,
@@ -181,7 +203,8 @@
     "id": 39,
     "name": "ChestNut Waffle ",
     "price": 65,
-    "image_url": "http://localhost:4000/images/chestnut-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/chestnut-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789753/chestnut-waffle_ey52uw.jpg"
   },
   {
     "category_id": 8,
@@ -189,7 +212,8 @@
     "id": 40,
     "name": "Oreo Waffle",
     "price": 70,
-    "image_url": "http://localhost:4000/images/oreo-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/oreo-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789812/oreo-waffle_oa9xpp.jpg"
   },
   {
     "category_id": 8,
@@ -197,7 +221,8 @@
     "id": 41,
     "name": "İdeal Waffle ",
     "price": 55,
-    "image_url": "http://localhost:4000/images/ideal-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/ideal-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789775/ideal-waffle_ajo66a.jpg"
   },
   {
     "category_id": 8,
@@ -205,7 +230,8 @@
     "id": 42,
     "name": "Marshmallow Waffle ",
     "price": 65,
-    "image_url": "http://localhost:4000/images/marshmallow-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/marshmallow-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789797/marshmallow-waffle_rd5iie.jpg"
   },
   {
     "category_id": 8,
@@ -213,7 +239,8 @@
     "id": 43,
     "name": "Hedonist Waffle",
     "price": 61,
-    "image_url": "http://localhost:4000/images/hedo-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/hedo-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789773/hedo-waffle_sl0ekh.jpg"
   },
   {
     "category_id": 8,
@@ -221,7 +248,8 @@
     "id": 44,
     "name": "Happy Kids Waffle ",
     "price": 65,
-    "image_url": "http://localhost:4000/images/happy-kids-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/happy-kids-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789770/happy-kids-waffle_i8sszq.jpg"
   },
   {
     "category_id": 8,
@@ -229,7 +257,8 @@
     "id": 45,
     "name": " Single Waffle",
     "price": 55,
-    "image_url": "http://localhost:4000/images/single-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/single-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789820/single-waffle_xibjw2.jpg"
   },
   {
     "category_id": 8,
@@ -237,7 +266,8 @@
     "id": 46,
     "name": "Berries Waffle ",
     "price": 65,
-    "image_url": "http://localhost:4000/images/berries-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/berries-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789747/berries-waffle_afjyrd.jpg"
   },
   {
     "category_id": 8,
@@ -245,7 +275,8 @@
     "id": 47,
     "name": "Cuba Waffle ",
     "price": 65,
-    "image_url": "http://localhost:4000/images/cuba-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/cuba-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789756/cuba-waffle_vtewoz.jpg"
   },
   {
     "category_id": 8,
@@ -253,7 +284,8 @@
     "id": 48,
     "name": "Çıtır Special Waffle ",
     "price": 72,
-    "image_url": "http://localhost:4000/images/citir-special-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/citir-special-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789751/citir-special-waffle_frbwyr.jpg"
   },
   {
     "category_id": 8,
@@ -261,7 +293,8 @@
     "id": 49,
     "name": "Fruit Mix Waffle ",
     "price": 70,
-    "image_url": "http://localhost:4000/images/fruit-mix-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/fruit-mix-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789771/fruit-mix-waffle_p2ff5r.jpg"
   },
   {
     "category_id": 8,
@@ -269,7 +302,8 @@
     "id": 50,
     "name": "Favourite Waffle ",
     "price": 65,
-    "image_url": "http://localhost:4000/images/favourite-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/favourite-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789766/favourite-waffle_mdytor.jpg"
   },
   {
     "category_id": 8,
@@ -277,7 +311,8 @@
     "id": 51,
     "name": "Dual Waffle ",
     "price": 60,
-    "image_url": "http://localhost:4000/images/dual-waffle.jpeg"
+    "image_url2": "http://localhost:4000/images/dual-waffle.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789761/dual-waffle_l8vztu.jpg"
   },
   {
     "category_id": 13,
@@ -285,7 +320,8 @@
     "id": 14,
     "name": "Bol Malzemos Pizza",
     "price": 65.50,
-    "image_url": "http://localhost:4000/images/bol-mazemos.png"
+    "image_url2": "http://localhost:4000/images/bol-mazemos.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789749/bol-mazemos_ree4xj.jpg"
   },
   {
     "category_id": 13,
@@ -293,7 +329,8 @@
     "id": 15,
     "name": "Karışık Pizza",
     "price": 65.50,
-    "image_url": "http://localhost:4000/images/karisik-pizza.png"
+    "image_url2": "http://localhost:4000/images/karisik-pizza.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789781/karisik-pizza_hwloqr.jpg"
   },
   {
     "category_id": 13,
@@ -301,7 +338,8 @@
     "id": 16,
     "name": "Margaritta",
     "price": 65.50,
-    "image_url": "http://localhost:4000/images/margaritta.png"
+    "image_url2": "http://localhost:4000/images/margaritta.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789796/margaritta_i6pdsq.jpg"
   },
   {
     "category_id": 13,
@@ -309,7 +347,8 @@
     "id": 17,
     "name": "Peynirli Pizza",
     "price": 65.50,
-    "image_url": "http://localhost:4000/images/peynirli-pizza.png"
+    "image_url2": "http://localhost:4000/images/peynirli-pizza.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789817/peynirli-pizza_ezoagc.jpg"
   },
   {
     "category_id": 13,
@@ -317,7 +356,8 @@
     "id": 18,
     "name": "Vaganza Pizza",
     "price": 65.50,
-    "image_url": "http://localhost:4000/images/vaganza-pizza.png"
+    "image_url2": "http://localhost:4000/images/vaganza-pizza.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789835/vaganza-pizza_qsnddp.jpg"
   },
   {
     "category_id": 13,
@@ -325,7 +365,8 @@
     "id": 19,
     "name": "İtalyano Pizza",
     "price": 68.50,
-    "image_url": "http://localhost:4000/images/italiano-pizza.png"
+    "image_url2": "http://localhost:4000/images/italiano-pizza.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789777/italiano-pizza_hdmqof.jpg"
   },
   {
     "category_id": 13,
@@ -333,7 +374,8 @@
     "id": 60,
     "name": "İzmir Karışık Pizza",
     "price": 70,
-    "image_url": "http://localhost:4000/images/izmir-karışık.jpeg"
+    "image_url2": "http://localhost:4000/images/izmir-karışık.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789777/izmir-kar%C4%B1%C5%9F%C4%B1k_wxcbce.jpg"
   },
   {
     "category_id": 13,
@@ -341,7 +383,8 @@
     "id": 61,
     "name": "Füme Kaburga Pizza",
     "price": 80,
-    "image_url": "http://localhost:4000/images/füme-kaburga.jpeg"
+    "image_url2": "http://localhost:4000/images/füme-kaburga.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789769/f%C3%BCme-kaburga_lyrvmt.jpg"
   },
   {
     "category_id": 13,
@@ -349,7 +392,8 @@
     "id": 62,
     "name": "4 Peynirli Pizza",
     "price": 65,
-    "image_url": "http://localhost:4000/images/4-peynirli.jpeg"
+    "image_url2": "http://localhost:4000/images/4-peynirli.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789740/4-peynirli_bcams4.jpg"
   },
   {
     "category_id": 13,
@@ -357,7 +401,8 @@
     "id": 63,
     "name": "Ege Pizza",
     "price": 70,
-    "image_url": "http://localhost:4000/images/ege.jpeg"
+    "image_url2": "http://localhost:4000/images/ege.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789762/ege_fgmdg7.jpg"
   },
   {
     "category_id": 13,
@@ -365,7 +410,8 @@
     "id": 64,
     "name": "Luna Pizza",
     "price": 75,
-    "image_url": "http://localhost:4000/images/luna.jpeg"
+    "image_url2": "http://localhost:4000/images/luna.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789790/luna_yk6jpc.jpg"
   },
   {
     "category_id": 13,
@@ -373,7 +419,8 @@
     "id": 65,
     "name": "Mantarlı - Sosisli Pizza",
     "price": 75,
-    "image_url": "http://localhost:4000/images/mantarlı-sosisli.jpeg"
+    "image_url2": "http://localhost:4000/images/mantarlı-sosisli.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789791/mantarl%C4%B1-sosisli_qj1nfg.jpg"
   },
   {
     "category_id": 13,
@@ -381,7 +428,8 @@
     "id": 66,
     "name": "Vegeterian Pizza",
     "price": 60,
-    "image_url": "http://localhost:4000/images/vegetarian.jpeg"
+    "image_url2": "http://localhost:4000/images/vegetarian.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789834/vegetarian_hhw83q.jpg"
   },
   {
     "category_id": 13,
@@ -389,7 +437,8 @@
     "id": 67,
     "name": "Special Pizza",
     "price": 80,
-    "image_url": "http://localhost:4000/images/special.jpeg"
+    "image_url2": "http://localhost:4000/images/special.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789826/special_gsmzue.jpg"
   },
   {
     "category_id": 13,
@@ -397,7 +446,8 @@
     "id": 68,
     "name": "Dream Pizza",
     "price": 80,
-    "image_url": "http://localhost:4000/images/dream.jpeg"
+    "image_url2": "http://localhost:4000/images/dream.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789759/dream_djtqad.jpg"
   },
   {
     "category_id": 13,
@@ -405,7 +455,8 @@
     "id": 69,
     "name": "Kapadokya Pizza",
     "price": 75,
-    "image_url": "http://localhost:4000/images/kapadokya.jpeg"
+    "image_url2": "http://localhost:4000/images/kapadokya.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789778/kapadokya_rkligv.jpg"
   },
   {
     "category_id": 13,
@@ -413,7 +464,8 @@
     "id": 70,
     "name": "Margarita Pizza",
     "price": 75,
-    "image_url": "http://localhost:4000/images/margarita.jpeg"
+    "image_url2": "http://localhost:4000/images/margarita.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789793/margarita_rwkwej.jpg"
   },
   {
     "category_id": 13,
@@ -421,7 +473,8 @@
     "id": 71,
     "name": "Mexican Pizza",
     "price": 75,
-    "image_url": "http://localhost:4000/images/mexican.jpeg"
+    "image_url2": "http://localhost:4000/images/mexican.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789800/mexican_xdxzcz.jpg"
   },
   {
     "category_id": 13,
@@ -429,7 +482,8 @@
     "id": 72,
     "name": "Kavurmalım Pizza",
     "price": 75,
-    "image_url": "http://localhost:4000/images/kavurmalım.jpeg"
+    "image_url2": "http://localhost:4000/images/kavurmalım.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789784/kavurmal%C4%B1m_rg7uh3.jpg"
   },
   {
     "category_id": 13,
@@ -437,7 +491,8 @@
     "id": 73,
     "name": "Mix Pizza",
     "price": 75,
-    "image_url": "http://localhost:4000/images/mix.jpeg"
+    "image_url2": "http://localhost:4000/images/mix.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789804/mix_yebcbm.jpg"
   },
   {
     "category_id": 13,
@@ -445,7 +500,8 @@
     "id": 74,
     "name": "Ton Balıklı Pizza",
     "price": 75,
-    "image_url": "http://localhost:4000/images/ton-balıklı.jpeg"
+    "image_url2": "http://localhost:4000/images/ton-balıklı.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789831/ton-bal%C4%B1kl%C4%B1_mq8uk4.jpg"
   },
   {
     "category_id": 13,
@@ -453,7 +509,8 @@
     "id": 75,
     "name": "Akdeniz Pizza",
     "price": 75,
-    "image_url": "http://localhost:4000/images/akdeniz.jpeg"
+    "image_url2": "http://localhost:4000/images/akdeniz.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789740/akdeniz_ajv27x.jpg"
   },
   {
     "category_id": 20,
@@ -461,7 +518,8 @@
     "id": 21,
     "name": "Menengiç Kahvesi",
     "price": 13,
-    "image_url": "http://localhost:4000/images/menengic-kahvesi.png"
+    "image_url2": "http://localhost:4000/images/menengic-kahvesi.png",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789812/menengic-kahvesi_w4agxh.png"
   },
   {
     "category_id": 20,
@@ -469,7 +527,8 @@
     "id": 22,
     "name": "Türk Kahvesi",
     "price": 13,
-    "image_url": "http://localhost:4000/images/turk-kahvesi.jpeg"
+    "image_url2": "http://localhost:4000/images/turk-kahvesi.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789832/turk-kahvesi_jor5vx.jpg"
   },
   {
     "category_id": 20,
@@ -477,7 +536,8 @@
     "id": 23,
     "name": "Damla Sakızlı Kahve",
     "price": 18.59,
-    "image_url": "http://localhost:4000/images/turk-kahvesi.jpeg"
+    "image_url2": "http://localhost:4000/images/turk-kahvesi.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789832/turk-kahvesi_jor5vx.jpg"
   },
   {
     "category_id": 20,
@@ -485,7 +545,8 @@
     "id": 24,
     "name": "Espresso",
     "price": 28.00,
-    "image_url": "http://localhost:4000/images/Espresso.jpg"
+    "image_url2": "http://localhost:4000/images/Espresso.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789765/Espresso_ubybgn.jpg"
   },
   {
     "category_id": 20,
@@ -493,7 +554,8 @@
     "id": 25,
     "name": "Americano",
     "price": 28.00,
-    "image_url": "http://localhost:4000/images/Americano.jpg"
+    "image_url2": "http://localhost:4000/images/Americano.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789740/Americano_jrcs5r.jpg"
   },
   {
     "category_id": 20,
@@ -501,7 +563,8 @@
     "id": 26,
     "name": "Cappuccino",
     "price": 35.00,
-    "image_url": "http://localhost:4000/images/Cappuccino.jpg"
+    "image_url2": "http://localhost:4000/images/Cappuccino.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789746/Cappuccino_kpckgo.jpg"
   },
   {
     "category_id": 20,
@@ -509,7 +572,8 @@
     "id": 27,
     "name": "Frappe",
     "price": 30.00,
-    "image_url": "http://localhost:4000/images/Frappe.jpg"
+    "image_url2": "http://localhost:4000/images/Frappe.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789768/Frappe_d0tmfo.jpg"
   },
   {
     "category_id": 20,
@@ -517,7 +581,8 @@
     "id": 28,
     "name": "Latte",
     "price": 27.00,
-    "image_url": "http://localhost:4000/images/Latte.jpg"
+    "image_url2": "http://localhost:4000/images/Latte.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789780/Latte_yqdjtt.jpg"
   },
   {
     "category_id": 20,
@@ -525,7 +590,8 @@
     "id": 29,
     "name": "Macchiato",
     "price": 24.00,
-    "image_url": "http://localhost:4000/images/Macchiato.jpg"
+    "image_url2": "http://localhost:4000/images/Macchiato.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789789/Macchiato_vmgmyo.jpg"
   },
   {
     "category_id": 20,
@@ -533,7 +599,8 @@
     "id": 30,
     "name": "Mocha",
     "price": 23.00,
-    "image_url": "http://localhost:4000/images/Mocha.jpg"
+    "image_url2": "http://localhost:4000/images/Mocha.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789802/Mocha_zjcikk.jpg"
   },
   {
     "category_id": 20,
@@ -541,7 +608,8 @@
     "id": 31,
     "name": "Marocchino",
     "price": 26.00,
-    "image_url": "http://localhost:4000/images/Marocchino.jpg"
+    "image_url2": "http://localhost:4000/images/Marocchino.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789795/Marocchino_txkwpx.jpg"
   },
   {
     "category_id": 20,
@@ -549,7 +617,8 @@
     "id": 32,
     "name": "Filtre Kahve",
     "price": 23.00,
-    "image_url": "http://localhost:4000/images/Filtre-Kahve.jpg"
+    "image_url2": "http://localhost:4000/images/Filtre-Kahve.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789767/Filtre-Kahve_rz9416.jpg"
   },
   {
     "category_id": 2,
@@ -557,7 +626,8 @@
     "id": 80,
     "name": "Apple Martini",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/apple-martini.jpeg"
+    "image_url2": "http://localhost:4000/images/apple-martini.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789748/apple-martini_tgiinr.jpg"
   },
   {
     "category_id": 2,
@@ -565,7 +635,8 @@
     "id": 81,
     "name": "Vodka Martini",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/vodka-martini.jpeg"
+    "image_url2": "http://localhost:4000/images/vodka-martini.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789836/vodka-martini_ysq798.jpg"
   },
   {
     "category_id": 2,
@@ -573,7 +644,8 @@
     "id": 82,
     "name": "Cosmopolitan",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/cosmopolitan.jpeg"
+    "image_url2": "http://localhost:4000/images/cosmopolitan.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789760/cosmopolitan_hp40fw.jpg"
   },
   {
     "category_id": 2,
@@ -581,7 +653,8 @@
     "id": 83,
     "name": "Margarita",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/margaritaa.jpeg"
+    "image_url2": "http://localhost:4000/images/margaritaa.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789801/margaritaa_noeu0p.jpg"
   },
   {
     "category_id": 2,
@@ -589,7 +662,8 @@
     "id": 84,
     "name": "Aperol Spritz",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/aperol-spritz.jpeg"
+    "image_url2": "http://localhost:4000/images/aperol-spritz.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789745/aperol-spritz_nxfp8r.jpg"
   },
   {
     "category_id": 2,
@@ -597,7 +671,8 @@
     "id": 85,
     "name": "Negroni - Americano",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/negroni-americano.jpeg"
+    "image_url2": "http://localhost:4000/images/negroni-americano.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789815/negroni-americano_yf06vs.jpg"
   },
   {
     "category_id": 2,
@@ -605,7 +680,8 @@
     "id": 86,
     "name": "Ameretto Sour",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/ameretto-sour.jpeg"
+    "image_url2": "http://localhost:4000/images/ameretto-sour.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789748/ameretto-sour_ym0dvs.jpg"
   },
   {
     "category_id": 2,
@@ -613,7 +689,8 @@
     "id": 87,
     "name": "Lynchburg Lemonade",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/lynchburg-lemonade.jpeg"
+    "image_url2": "http://localhost:4000/images/lynchburg-lemonade.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789791/lynchburg-lemonade_rraxlr.jpg"
   },
   {
     "category_id": 2,
@@ -621,7 +698,8 @@
     "id": 88,
     "name": "Long Island",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/long-island.jpeg"
+    "image_url2": "http://localhost:4000/images/long-island.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789793/long-island_snfd3l.jpg"
   },
   {
     "category_id": 2,
@@ -629,7 +707,8 @@
     "id": 89,
     "name": "Mojito",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/mojito.jpg"
+    "image_url2": "http://localhost:4000/images/mojito.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789806/mojito_i0gyc9.jpg"
   },
   {
     "category_id": 2,
@@ -637,7 +716,8 @@
     "id": 90,
     "name": "Viski Sour",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/viski-sour.jpeg"
+    "image_url2": "http://localhost:4000/images/viski-sour.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789838/viski-sour_qfwgy4.jpg"
   },
   {
     "category_id": 2,
@@ -645,7 +725,8 @@
     "id": 91,
     "name": "Pinacolada",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/pinacolada.jpg"
+    "image_url2": "http://localhost:4000/images/pinacolada.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789832/pinacolada_cok5rx.jpg"
   },
   {
     "category_id": 2,
@@ -653,7 +734,8 @@
     "id": 92,
     "name": "Zebra",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/zebra.jpg"
+    "image_url2": "http://localhost:4000/images/zebra.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789841/zebra_ka47pt.jpg"
   },
   {
     "category_id": 2,
@@ -661,7 +743,8 @@
     "id": 93,
     "name": "Pornstar",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/pornstar.jpeg"
+    "image_url2": "http://localhost:4000/images/pornstar.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789824/pornstar_asdmxr.jpg"
   },
   {
     "category_id": 2,
@@ -669,7 +752,8 @@
     "id": 94,
     "name": "Espresso Martini ",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/espresso-martini.jpeg"
+    "image_url2": "http://localhost:4000/images/espresso-martini.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789766/espresso-martini_lrbv7m.jpg"
   },
   {
     "category_id": 2,
@@ -677,7 +761,8 @@
     "id": 95,
     "name": "Bellini",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/bellini.jpeg"
+    "image_url2": "http://localhost:4000/images/bellini.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789743/bellini_r0fw6q.jpg"
   },
   {
     "category_id": 2,
@@ -685,7 +770,8 @@
     "id": 96,
     "name": "Carolina",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/carolina.jpg"
+    "image_url2": "http://localhost:4000/images/carolina.jpg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789751/carolina_qz4vgz.jpg"
   },
   {
     "category_id": 2,
@@ -693,7 +779,8 @@
     "id": 97,
     "name": "Midnight Kiss",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/midnight-kiss.jpeg"
+    "image_url2": "http://localhost:4000/images/midnight-kiss.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789818/midnight-kiss_xunibc.jpg"
   }
   ,
   {
@@ -702,7 +789,8 @@
     "id": 98,
     "name": "Angel Kiss",
     "price": 95.00,
-    "image_url": "http://localhost:4000/images/angel-kiss.jpeg"
+    "image_url2": "http://localhost:4000/images/angel-kiss.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789762/angel-kiss_byfagz.jpg"
   }
   ,
   {
@@ -711,7 +799,8 @@
     "id": 100,
     "name": "Mojito Strawberry",
     "price": 90.00,
-    "image_url": "http://localhost:4000/images/mojito-strawberry.jpeg"
+    "image_url2": "http://localhost:4000/images/mojito-strawberry.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789823/mojito-strawberry_kqjj91.jpg"
   }
   ,
   {
@@ -720,7 +809,8 @@
     "id": 101,
     "name": "Pina Colada Soft",
     "price": 90.00,
-    "image_url": "http://localhost:4000/images/pina-colada-soft.jpeg"
+    "image_url2": "http://localhost:4000/images/pina-colada-soft.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789822/pina-colada-soft_dsbvhq.jpg"
   }
   ,
   {
@@ -729,7 +819,8 @@
     "id": 102,
     "name": "Sunrise",
     "price": 90.00,
-    "image_url": "http://localhost:4000/images/sunrise.jpeg"
+    "image_url2": "http://localhost:4000/images/sunrise.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789835/sunrise_qa18nr.jpg"
   }
   ,
   {
@@ -738,7 +829,8 @@
     "id": 103,
     "name": "Zebra Boom",
     "price": 90.00,
-    "image_url": "http://localhost:4000/images/zebra-boom.jpeg"
+    "image_url2": "http://localhost:4000/images/zebra-boom.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789842/zebra-boom_oxgtub.jpg"
   }
   ,
   {
@@ -747,7 +839,8 @@
     "id": 104,
     "name": "Exotic Summer",
     "price": 90.00,
-    "image_url": "http://localhost:4000/images/exotic-summer.jpeg"
+    "image_url2": "http://localhost:4000/images/exotic-summer.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789772/exotic-summer_hnr2mc.jpg"
   }
   ,
   {
@@ -756,7 +849,8 @@
     "id": 105,
     "name": "Green Peace",
     "price": 90.00,
-    "image_url": "http://localhost:4000/images/green-peace.jpeg"
+    "image_url2": "http://localhost:4000/images/green-peace.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789785/green-peace_crc4cu.jpg"
   }
   ,
   {
@@ -765,7 +859,8 @@
     "id": 106,
     "name": "Mojito Passion",
     "price": 90.00,
-    "image_url": "http://localhost:4000/images/mojito-passion.jpeg"
+    "image_url2": "http://localhost:4000/images/mojito-passion.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789811/mojito-passion_b0sm2x.jpg"
   }
   ,
   {
@@ -774,6 +869,7 @@
     "id": 107,
     "name": "Mojito Soft",
     "price": 90.00,
-    "image_url": "http://localhost:4000/images/mojito-soft.jpeg"
+    "image_url2": "http://localhost:4000/images/mojito-soft.jpeg",
+    "image_url": "https://res.cloudinary.com/dwow6v30a/image/upload/v1671789831/mojito-soft_ioqg98.jpg"
   }
 ]

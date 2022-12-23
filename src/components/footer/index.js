@@ -133,7 +133,7 @@ export default function Footer() {
         </MDBContainer>
       </section>
 
-      <h9>helloooo</h9>
+      <span>sertacgltkn</span>
     </MDBFooter>
   );
 }
