@@ -1,0 +1,12 @@
+.modal{
+    color: white;
+}
+
+.modal-dialog {
+   background-color: black;
+   border-radius: 10px;
+}
+
+.modal-content {
+    background : linear-gradient(to right,  rgb(0, 0, 0), rgb(252, 70, 107));
+}

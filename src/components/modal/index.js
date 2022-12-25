@@ -1,5 +1,6 @@
 import React from "react";
 import { CloseIcon } from "../icons";
+import "./style.css"
 
 export default function Modal({ show, onClose, children, title }) {
 	if (!show) return null;  // show özelliği, modalın gösterilip gösterilmeyeceğini belirleyen bir boolean değeridir. show false ise, modal bileşeni null döndürecektir ve böylece sayfadan gizlenmiş olacaktır.
