@@ -41,10 +41,13 @@
   text-decoration: none;
   font-family: "Exo 2", sans-serif;
   transform: skew(10, 30deg);
-  border: 1px solid #5ef4ff;
+  border: 5px solid;
+  border-image: linear-gradient(to right, #FF0000, #000000) ;
+  animation: border-color 2s linear infinite;
   margin: 1px;
   padding: 1px;
 }
+
 
 .link-text:hover{
   background: linear-gradient(-142deg, rgb(0, 0, 0) 0%, rgb(216, 13, 13) 100%);
@@ -144,5 +147,18 @@
     height: 55px;
     line-height: 55px;
     width: 150px;
+  }
+}
+
+
+@keyframes border-color{
+  10% {
+    border-color: #ffffff;
+  }
+  50% {
+    border-color: #e5ff00;
+  }
+  100% {
+    border-color: #8262da;
   }
 }
