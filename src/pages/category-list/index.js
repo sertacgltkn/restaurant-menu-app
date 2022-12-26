@@ -39,7 +39,6 @@ export default function CategoryListPage() {
 
     const formData = new FormData(event.currentTarget);
     const keyword = formData.get("search");
-    debugger;
     setKeyword(keyword);
   };
 

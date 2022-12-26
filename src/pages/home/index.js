@@ -24,7 +24,6 @@ export default function HomePage() {
     fetch(`${API_BASE_URL}/dailymenu`)
       .then((resp) => resp.json())
       .then((items) => {
-        debugger;
         setDailyMenuItems(items);
       })
       .catch((err) => {
