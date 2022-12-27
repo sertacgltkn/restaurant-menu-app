@@ -8,6 +8,7 @@
   font-family: "Exo 2", sans-serif;
   background: rgb(0, 0, 0);
   background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgb(216, 13, 13) 100%);
+  border: 1px solid black;
   max-width: 130px;
   margin: 0 auto;
   padding: 1rem;
@@ -27,6 +28,8 @@
   margin-bottom: 1rem;
   padding-right: 2rem;
   border-radius: 30px;
+  box-shadow: 10px 20px 14px 7px #000000;
+  animation: border-color 2s linear infinite;
 }
 
 .link-text{
@@ -44,8 +47,8 @@
   border: 5px solid;
   border-image: linear-gradient(to right, #FF0000, #000000) ;
   animation: border-color 2s linear infinite;
-  margin: 1px;
-  padding: 1px;
+  margin: 0px;
+  padding: 5px;
 }
 
 
@@ -53,6 +56,7 @@
   background: linear-gradient(-142deg, rgb(0, 0, 0) 0%, rgb(216, 13, 13) 100%);
   text-decoration: none;
   color: white;
+  box-shadow: 10px 20px 14px 7px #000000;
 }
 
 
@@ -66,7 +70,46 @@
   align-items: center; /* Bu özellik, bir nesnenin içerisindeki öğeleri yatay olarak ortalar. */
   justify-content: flex-end; /* Bu özellik, bir nesnenin içerisindeki öğeleri sağ tarafa yaslar. */
   cursor: pointer;
+  color: #e5ff00;
 }
+
+.link-text {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  font-size: 17px;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.link-text:hover {
+  background-color: black;
+}
+
+.link-text:active {
+  background-color: white;
+  color: black;
+}
+.link-text {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .card {
   background-color: #ffc107;
   margin-bottom: 20px;
@@ -107,12 +150,7 @@
   justify-content: space-between;
 }
 
-
-
-
-
-
-.button-69 {
+/* .button-69 {
   background-color: initial;
   background-image: linear-gradient(#8614f8 0, #760be0 100%);
   border-radius: 5px;
@@ -135,11 +173,11 @@
   touch-action: manipulation;
   vertical-align: bottom;
   width: 190px;
-}
-
+} */
+/* 
 .button-69:hover {
   opacity: .7;
-}
+} */
 
 @media screen and (max-width: 1000px) {
   .button-69 {
@@ -153,12 +191,12 @@
 
 @keyframes border-color{
   10% {
-    border-color: #ffffff;
+    border-color: #000000;
   }
   50% {
-    border-color: #e5ff00;
+    border-color: rgb(243, 239, 19);
   }
   100% {
-    border-color: #8262da;
+    border-color: #000000;
   }
 }
