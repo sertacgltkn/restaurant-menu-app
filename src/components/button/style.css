@@ -1,0 +1,39 @@
+#addToBasket {
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 5px solid transparent;
+    box-shadow: 2px 5px 3px 1px #000000;
+}
+
+#addToBasket:hover {
+    border: 5px solid #333;
+    animation: border-pulse 1s infinite;
+  }
+
+  @keyframes border-pulse {
+    0% {
+      border-color: rgb(255, 208, 0);
+    }
+    25% {
+      border-color: rgba(202, 181, 60, 0.836);
+    }
+    50% {
+      border-color: rgba(255, 0, 0, 0.685);
+    }
+    75% {
+      border-color: rgba(255, 0, 0, 0.39)
+    }
+    100% {
+      border-color: rgba(255, 0, 0, 0.384)
+    }
+  }
+  
+  
+  
+  
+  
