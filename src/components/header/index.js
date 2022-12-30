@@ -32,13 +32,13 @@ export default function Header({
     : true; // Eğer URL yolu "/urunler" ile başlıyorsa, "showFilterArea" değişkenine "false" değerini atıyoruz. Aksi halde "true" değerini atıyoruz.
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-warning sticky-top ">
+      <nav className="navbar navbar-expand-lg sticky-top ">
         {" "}
         {/* "sticky-top" sınıfı navbarın sayfanın en üstünde yapışık bir şekilde durmasını sağlar */}
         <div className="container-fluid">
           {" "}
           {/* div elementinin tam genişlikte olmasını ve ekranın tam genişliğine uyum sağlamasını belirtir. */}
-          <Link className="navbar-brand" to="/">
+          <Link style={{color:"white", fontFamily:"sans-serif"}} className="navbar-brand" to="/">
             React Restaurant Menu App
           </Link>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,18 +46,16 @@ export default function Header({
             {/* navbarın genişliğine göre otomatik olarak gizlenip görüntülenmesi */}
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="/anket">
-                  Anket
-                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/sepet">
+                <Link style={{color:"white",border:"1px solid orange", borderRadius:"15px", boxShadow: "5px 5px 5px black", background: "linear-gradient(to left, #FF0000, #000000)"}} className="nav-link" to="/sepet">
                   Sepetim {`(${getCartCount()})`}
                 </Link>
               </li>
             </ul>
             <form
               style={{
+                backgroundColor:"white",
                 visibility: showFilterArea ? "visible" : "hidden",
               }}
               ref={ref}
@@ -67,13 +65,14 @@ export default function Header({
               }}
               className={classes.searchForm}
             >
-              <input
+              <input 
                 value={value}
                 onChange={(e) => onChange(e.target.value)} // elementin değeri değiştiğinde bir fonksiyon çağırılabilir veya elementin değeri değiştiğinde bir değişkenin değeri değiştirilebilir.
                 name="search"
                 className={classes.input}
                 placeholder="Ürün ara..."
                 aria-label="Search"
+                style={{color:"black", fontStyle:"oblique", fontWeight:"bold"}}
               />
               {value && (
                 <button

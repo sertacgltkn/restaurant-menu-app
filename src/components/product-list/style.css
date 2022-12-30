@@ -45,7 +45,7 @@
   text-align: center;
   font-family: "Exo 2", sans-serif;
   transform: skew(10, 30deg);
-  border: 5px solid;
+  border: 2px solid #FFB75E;
   border-image: linear-gradient(to right, #FF0000, #000000) ;
   animation: border-color 2s linear infinite;
   margin: 0px;
@@ -53,6 +53,7 @@
 }
 
 .link-text:hover{
+  border: 2px solid #FFB75E;
   background: linear-gradient(-142deg, rgb(0, 0, 0) 0%, rgb(216, 13, 13) 100%);
   text-decoration: none;
   color: white;
